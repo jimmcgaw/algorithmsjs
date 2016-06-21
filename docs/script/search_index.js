@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "algorithmsjs/src/duplicatevertexerror.js~duplicatevertexerror",
+    "class/src/DuplicateVertexError.js~DuplicateVertexError.html",
+    "<span>DuplicateVertexError</span> <span class=\"search-result-import-path\">algorithmsjs/src/DuplicateVertexError.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/graph.js~graph",
     "class/src/Graph.js~Graph.html",
     "<span>Graph</span> <span class=\"search-result-import-path\">algorithmsjs/src/Graph.js</span>",
@@ -342,6 +348,30 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/duplicatevertexerror.js",
+    "file/src/DuplicateVertexError.js.html",
+    "src/DuplicateVertexError.js",
+    "file"
+  ],
+  [
+    "src/duplicatevertexerror.js~duplicatevertexerror#constructor",
+    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-constructor-constructor",
+    "src/DuplicateVertexError.js~DuplicateVertexError#constructor",
+    "method"
+  ],
+  [
+    "src/duplicatevertexerror.js~duplicatevertexerror#message",
+    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-message",
+    "src/DuplicateVertexError.js~DuplicateVertexError#message",
+    "member"
+  ],
+  [
+    "src/duplicatevertexerror.js~duplicatevertexerror#name",
+    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-name",
+    "src/DuplicateVertexError.js~DuplicateVertexError#name",
+    "member"
+  ],
+  [
     "src/edge.js",
     "file/src/Edge.js.html",
     "src/Edge.js",
@@ -360,6 +390,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/graph.js~graph#addverticies",
+    "class/src/Graph.js~Graph.html#instance-method-addVerticies",
+    "src/Graph.js~Graph#addVerticies",
+    "method"
+  ],
+  [
     "src/graph.js~graph#constructor",
     "class/src/Graph.js~Graph.html#instance-constructor-constructor",
     "src/Graph.js~Graph#constructor",
@@ -375,6 +411,12 @@ window.esdocSearchIndex = [
     "src/graph.js~graph#getvertices",
     "class/src/Graph.js~Graph.html#instance-method-getVertices",
     "src/Graph.js~Graph#getVertices",
+    "method"
+  ],
+  [
+    "src/graph.js~graph#hasvertexwithvalue",
+    "class/src/Graph.js~Graph.html#instance-method-hasVertexWithValue",
+    "src/Graph.js~Graph#hasVertexWithValue",
     "method"
   ],
   [

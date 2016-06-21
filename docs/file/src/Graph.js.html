@@ -32,7 +32,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Graph.js~Graph.html">Graph</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Graph.js~Graph.html">Graph</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Vertex.js~Vertex.html">Vertex</a></span></span></li>
 </ul>
 </div>
@@ -40,6 +41,7 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/Graph.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import Vertex from &apos;./Vertex&apos;;
+import DuplicateVertexError from &apos;./DuplicateVertexError&apos;;
 
 /**
  * Graph: represents a graph data structure.
@@ -57,6 +59,15 @@ class Graph {
   }
 
   /**
+   * @param {value} value to find in the graph.
+   * @return {Boolean} true if any vertex has this value else false
+   */
+  hasVertexWithValue(value){
+    var vertexValues = this.getVertexValues();
+    return !!~vertexValues.indexOf(value);
+  }
+
+  /**
    * @return {Array} array of values in all graph vertices.
    */
   getVertexValues(){
@@ -70,9 +81,23 @@ class Graph {
    * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
-    var vertex = new vertex_class(value);
-    this._vertices.push(vertex);
+    if (this.hasVertexWithValue(value)){
+      throw new DuplicateVertexError(&quot;Cannot add duplicate value &quot; + value.toString() + &quot; to graph.&quot;);
+    } else {
+      var vertex = new vertex_class(value);
+      this._vertices.push(vertex);
+    }
     return this;
+  }
+
+  /**
+   * @param {values} array of values to add to the graph
+   * @return {Graph} current instance of graph.
+   */
+  addVerticies(values){
+    values.forEach((value) =&gt; {
+      this.addVertex(value);
+    });
   }
 
 

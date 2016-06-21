@@ -48,6 +48,16 @@ class Graph {
     return this;
   }
 
+  /**
+   * @param {values} array of values to add to the graph
+   * @return {Graph} current instance of graph.
+   */
+  addVerticies(values){
+    values.forEach((value) => {
+      this.addVertex(value);
+    });
+  }
+
 
 
 }

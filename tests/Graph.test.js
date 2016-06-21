@@ -44,6 +44,14 @@ describe('Graph', () => {
     });
   });
 
+  describe('#addVerticies', function () {
+    it('adds an array of values to the graph', function () {
+      var values = ['A', 'B', 'C', 'D'];
+      graph.addVerticies(values);
+      expect(graph.getVertices().length).to.equal(values.length);
+    });
+  })
+
   describe('#getVertexValues', function () {
     it('returns the values of the vertices added', function () {
       graph.addVertex('A');
