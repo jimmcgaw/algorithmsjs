@@ -23,4 +23,4 @@ To view the documentation:
 
 ``` $ npm run docs ```
 
-(Or you can just open docs/index.html) in your favorite browser.
+(Or you can just open docs/index.html in your favorite browser.)
