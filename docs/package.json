@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docgen": "node_modules/.bin/esdoc -c esdoc.json",
+    "docs": "open docs/index.html",
     "test": "node_modules/.bin/mocha --compilers js:babel-core/register tests/**/*.test.js"
   },
   "keywords": [],

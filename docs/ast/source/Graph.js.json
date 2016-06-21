@@ -172,10 +172,10 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "name": "vertices",
+                          "name": "_vertices",
                           "range": [
                             125,
-                            133
+                            134
                           ],
                           "loc": {
                             "start": {
@@ -184,13 +184,13 @@
                             },
                             "end": {
                               "line": 8,
-                              "column": 17
+                              "column": 18
                             }
                           }
                         },
                         "range": [
                           120,
-                          133
+                          134
                         ],
                         "loc": {
                           "start": {
@@ -199,7 +199,7 @@
                           },
                           "end": {
                             "line": 8,
-                            "column": 17
+                            "column": 18
                           }
                         }
                       },
@@ -207,23 +207,23 @@
                         "type": "ArrayExpression",
                         "elements": [],
                         "range": [
-                          136,
-                          138
+                          137,
+                          139
                         ],
                         "loc": {
                           "start": {
                             "line": 8,
-                            "column": 20
+                            "column": 21
                           },
                           "end": {
                             "line": 8,
-                            "column": 22
+                            "column": 23
                           }
                         }
                       },
                       "range": [
                         120,
-                        138
+                        139
                       ],
                       "loc": {
                         "start": {
@@ -232,13 +232,13 @@
                         },
                         "end": {
                           "line": 8,
-                          "column": 22
+                          "column": 23
                         }
                       }
                     },
                     "range": [
                       120,
-                      139
+                      140
                     ],
                     "loc": {
                       "start": {
@@ -247,14 +247,14 @@
                       },
                       "end": {
                         "line": 8,
-                        "column": 23
+                        "column": 24
                       }
                     }
                   }
                 ],
                 "range": [
                   114,
-                  143
+                  144
                 ],
                 "loc": {
                   "start": {
@@ -271,7 +271,7 @@
               "expression": false,
               "range": [
                 112,
-                143
+                144
               ],
               "loc": {
                 "start": {
@@ -288,7 +288,7 @@
             "computed": false,
             "range": [
               101,
-              143
+              144
             ],
             "loc": {
               "start": {
@@ -300,6 +300,26 @@
                 "column": 3
               }
             },
+            "trailingComments": [
+              {
+                "type": "Block",
+                "value": "*\n   * @return {Array} array of all Vertex instances in this graph.\n   ",
+                "range": [
+                  148,
+                  223
+                ],
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 5
+                  }
+                }
+              }
+            ],
             "static": false
           },
           {
@@ -308,16 +328,16 @@
               "type": "Identifier",
               "name": "getVertices",
               "range": [
-                147,
-                158
+                226,
+                237
               ],
               "loc": {
                 "start": {
-                  "line": 11,
+                  "line": 14,
                   "column": 2
                 },
                 "end": {
-                  "line": 11,
+                  "line": 14,
                   "column": 13
                 }
               }
@@ -337,80 +357,80 @@
                       "object": {
                         "type": "ThisExpression",
                         "range": [
-                          173,
-                          177
+                          252,
+                          256
                         ],
                         "loc": {
                           "start": {
-                            "line": 12,
+                            "line": 15,
                             "column": 11
                           },
                           "end": {
-                            "line": 12,
+                            "line": 15,
                             "column": 15
                           }
                         }
                       },
                       "property": {
                         "type": "Identifier",
-                        "name": "vertices",
+                        "name": "_vertices",
                         "range": [
-                          178,
-                          186
+                          257,
+                          266
                         ],
                         "loc": {
                           "start": {
-                            "line": 12,
+                            "line": 15,
                             "column": 16
                           },
                           "end": {
-                            "line": 12,
-                            "column": 24
+                            "line": 15,
+                            "column": 25
                           }
                         }
                       },
                       "range": [
-                        173,
-                        186
+                        252,
+                        266
                       ],
                       "loc": {
                         "start": {
-                          "line": 12,
+                          "line": 15,
                           "column": 11
                         },
                         "end": {
-                          "line": 12,
-                          "column": 24
+                          "line": 15,
+                          "column": 25
                         }
                       }
                     },
                     "range": [
-                      166,
-                      187
+                      245,
+                      267
                     ],
                     "loc": {
                       "start": {
-                        "line": 12,
+                        "line": 15,
                         "column": 4
                       },
                       "end": {
-                        "line": 12,
-                        "column": 25
+                        "line": 15,
+                        "column": 26
                       }
                     }
                   }
                 ],
                 "range": [
-                  160,
-                  191
+                  239,
+                  271
                 ],
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 14,
                     "column": 15
                   },
                   "end": {
-                    "line": 13,
+                    "line": 16,
                     "column": 3
                   }
                 }
@@ -418,16 +438,16 @@
               "generator": false,
               "expression": false,
               "range": [
-                158,
-                191
+                237,
+                271
               ],
               "loc": {
                 "start": {
-                  "line": 11,
+                  "line": 14,
                   "column": 13
                 },
                 "end": {
-                  "line": 13,
+                  "line": 16,
                   "column": 3
                 }
               }
@@ -435,19 +455,59 @@
             "kind": "method",
             "computed": false,
             "range": [
-              147,
-              191
+              226,
+              271
             ],
             "loc": {
               "start": {
-                "line": 11,
+                "line": 14,
                 "column": 2
               },
               "end": {
-                "line": 13,
+                "line": 16,
                 "column": 3
               }
             },
+            "leadingComments": [
+              {
+                "type": "Block",
+                "value": "*\n   * @return {Array} array of all Vertex instances in this graph.\n   ",
+                "range": [
+                  148,
+                  223
+                ],
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 5
+                  }
+                }
+              }
+            ],
+            "trailingComments": [
+              {
+                "type": "Block",
+                "value": "*\n   * @return {Array} array of values in all graph vertices.\n   ",
+                "range": [
+                  275,
+                  344
+                ],
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 5
+                  }
+                }
+              }
+            ],
             "static": false
           },
           {
@@ -456,16 +516,16 @@
               "type": "Identifier",
               "name": "getVertexValues",
               "range": [
-                195,
-                210
+                347,
+                362
               ],
               "loc": {
                 "start": {
-                  "line": 15,
+                  "line": 21,
                   "column": 2
                 },
                 "end": {
-                  "line": 15,
+                  "line": 21,
                   "column": 17
                 }
               }
@@ -490,50 +550,50 @@
                           "object": {
                             "type": "ThisExpression",
                             "range": [
-                              225,
-                              229
+                              377,
+                              381
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
+                                "line": 22,
                                 "column": 11
                               },
                               "end": {
-                                "line": 16,
+                                "line": 22,
                                 "column": 15
                               }
                             }
                           },
                           "property": {
                             "type": "Identifier",
-                            "name": "vertices",
+                            "name": "_vertices",
                             "range": [
-                              230,
-                              238
+                              382,
+                              391
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
+                                "line": 22,
                                 "column": 16
                               },
                               "end": {
-                                "line": 16,
-                                "column": 24
+                                "line": 22,
+                                "column": 25
                               }
                             }
                           },
                           "range": [
-                            225,
-                            238
+                            377,
+                            391
                           ],
                           "loc": {
                             "start": {
-                              "line": 16,
+                              "line": 22,
                               "column": 11
                             },
                             "end": {
-                              "line": 16,
-                              "column": 24
+                              "line": 22,
+                              "column": 25
                             }
                           }
                         },
@@ -541,32 +601,32 @@
                           "type": "Identifier",
                           "name": "map",
                           "range": [
-                            239,
-                            242
+                            392,
+                            395
                           ],
                           "loc": {
                             "start": {
-                              "line": 16,
-                              "column": 25
+                              "line": 22,
+                              "column": 26
                             },
                             "end": {
-                              "line": 16,
-                              "column": 28
+                              "line": 22,
+                              "column": 29
                             }
                           }
                         },
                         "range": [
-                          225,
-                          242
+                          377,
+                          395
                         ],
                         "loc": {
                           "start": {
-                            "line": 16,
+                            "line": 22,
                             "column": 11
                           },
                           "end": {
-                            "line": 16,
-                            "column": 28
+                            "line": 22,
+                            "column": 29
                           }
                         }
                       },
@@ -579,17 +639,17 @@
                               "type": "Identifier",
                               "name": "vertex",
                               "range": [
-                                244,
-                                250
+                                397,
+                                403
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 16,
-                                  "column": 30
+                                  "line": 22,
+                                  "column": 31
                                 },
                                 "end": {
-                                  "line": 16,
-                                  "column": 36
+                                  "line": 22,
+                                  "column": 37
                                 }
                               }
                             }
@@ -608,16 +668,16 @@
                                       "type": "Identifier",
                                       "name": "vertex",
                                       "range": [
-                                        270,
-                                        276
+                                        423,
+                                        429
                                       ],
                                       "loc": {
                                         "start": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 13
                                         },
                                         "end": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 19
                                         }
                                       }
@@ -626,78 +686,78 @@
                                       "type": "Identifier",
                                       "name": "getValue",
                                       "range": [
-                                        277,
-                                        285
+                                        430,
+                                        438
                                       ],
                                       "loc": {
                                         "start": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 20
                                         },
                                         "end": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 28
                                         }
                                       }
                                     },
                                     "range": [
-                                      270,
-                                      285
+                                      423,
+                                      438
                                     ],
                                     "loc": {
                                       "start": {
-                                        "line": 17,
+                                        "line": 23,
                                         "column": 13
                                       },
                                       "end": {
-                                        "line": 17,
+                                        "line": 23,
                                         "column": 28
                                       }
                                     }
                                   },
                                   "arguments": [],
                                   "range": [
-                                    270,
-                                    287
+                                    423,
+                                    440
                                   ],
                                   "loc": {
                                     "start": {
-                                      "line": 17,
+                                      "line": 23,
                                       "column": 13
                                     },
                                     "end": {
-                                      "line": 17,
+                                      "line": 23,
                                       "column": 30
                                     }
                                   }
                                 },
                                 "range": [
-                                  263,
-                                  288
+                                  416,
+                                  441
                                 ],
                                 "loc": {
                                   "start": {
-                                    "line": 17,
+                                    "line": 23,
                                     "column": 6
                                   },
                                   "end": {
-                                    "line": 17,
+                                    "line": 23,
                                     "column": 31
                                   }
                                 }
                               }
                             ],
                             "range": [
-                              255,
-                              294
+                              408,
+                              447
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
-                                "column": 41
+                                "line": 22,
+                                "column": 42
                               },
                               "end": {
-                                "line": 18,
+                                "line": 24,
                                 "column": 5
                               }
                             }
@@ -705,63 +765,63 @@
                           "generator": false,
                           "expression": false,
                           "range": [
-                            243,
-                            294
+                            396,
+                            447
                           ],
                           "loc": {
                             "start": {
-                              "line": 16,
-                              "column": 29
+                              "line": 22,
+                              "column": 30
                             },
                             "end": {
-                              "line": 18,
+                              "line": 24,
                               "column": 5
                             }
                           }
                         }
                       ],
                       "range": [
-                        225,
-                        295
+                        377,
+                        448
                       ],
                       "loc": {
                         "start": {
-                          "line": 16,
+                          "line": 22,
                           "column": 11
                         },
                         "end": {
-                          "line": 18,
+                          "line": 24,
                           "column": 6
                         }
                       }
                     },
                     "range": [
-                      218,
-                      296
+                      370,
+                      449
                     ],
                     "loc": {
                       "start": {
-                        "line": 16,
+                        "line": 22,
                         "column": 4
                       },
                       "end": {
-                        "line": 18,
+                        "line": 24,
                         "column": 7
                       }
                     }
                   }
                 ],
                 "range": [
-                  212,
-                  300
+                  364,
+                  453
                 ],
                 "loc": {
                   "start": {
-                    "line": 15,
+                    "line": 21,
                     "column": 19
                   },
                   "end": {
-                    "line": 19,
+                    "line": 25,
                     "column": 3
                   }
                 }
@@ -769,16 +829,16 @@
               "generator": false,
               "expression": false,
               "range": [
-                210,
-                300
+                362,
+                453
               ],
               "loc": {
                 "start": {
-                  "line": 15,
+                  "line": 21,
                   "column": 17
                 },
                 "end": {
-                  "line": 19,
+                  "line": 25,
                   "column": 3
                 }
               }
@@ -786,34 +846,54 @@
             "kind": "method",
             "computed": false,
             "range": [
-              195,
-              300
+              347,
+              453
             ],
             "loc": {
               "start": {
-                "line": 15,
+                "line": 21,
                 "column": 2
               },
               "end": {
-                "line": 19,
+                "line": 25,
                 "column": 3
               }
             },
-            "trailingComments": [
+            "leadingComments": [
               {
                 "type": "Block",
-                "value": "*\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   ",
+                "value": "*\n   * @return {Array} array of values in all graph vertices.\n   ",
                 "range": [
-                  304,
-                  396
+                  275,
+                  344
                 ],
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 18,
                     "column": 2
                   },
                   "end": {
-                    "line": 24,
+                    "line": 20,
+                    "column": 5
+                  }
+                }
+              }
+            ],
+            "trailingComments": [
+              {
+                "type": "Block",
+                "value": "*\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   ",
+                "range": [
+                  457,
+                  561
+                ],
+                "loc": {
+                  "start": {
+                    "line": 27,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 30,
                     "column": 5
                   }
                 }
@@ -827,16 +907,16 @@
               "type": "Identifier",
               "name": "addVertex",
               "range": [
-                399,
-                408
+                564,
+                573
               ],
               "loc": {
                 "start": {
-                  "line": 25,
+                  "line": 31,
                   "column": 2
                 },
                 "end": {
-                  "line": 25,
+                  "line": 31,
                   "column": 11
                 }
               }
@@ -849,16 +929,16 @@
                   "type": "Identifier",
                   "name": "value",
                   "range": [
-                    409,
-                    414
+                    574,
+                    579
                   ],
                   "loc": {
                     "start": {
-                      "line": 25,
+                      "line": 31,
                       "column": 12
                     },
                     "end": {
-                      "line": 25,
+                      "line": 31,
                       "column": 17
                     }
                   }
@@ -869,16 +949,16 @@
                     "type": "Identifier",
                     "name": "vertex_class",
                     "range": [
-                      416,
-                      428
+                      581,
+                      593
                     ],
                     "loc": {
                       "start": {
-                        "line": 25,
+                        "line": 31,
                         "column": 19
                       },
                       "end": {
-                        "line": 25,
+                        "line": 31,
                         "column": 31
                       }
                     }
@@ -887,31 +967,31 @@
                     "type": "Identifier",
                     "name": "Vertex",
                     "range": [
-                      429,
-                      435
+                      594,
+                      600
                     ],
                     "loc": {
                       "start": {
-                        "line": 25,
+                        "line": 31,
                         "column": 32
                       },
                       "end": {
-                        "line": 25,
+                        "line": 31,
                         "column": 38
                       }
                     }
                   },
                   "range": [
-                    416,
-                    435
+                    581,
+                    600
                   ],
                   "loc": {
                     "start": {
-                      "line": 25,
+                      "line": 31,
                       "column": 19
                     },
                     "end": {
-                      "line": 25,
+                      "line": 31,
                       "column": 38
                     }
                   }
@@ -929,16 +1009,16 @@
                           "type": "Identifier",
                           "name": "vertex",
                           "range": [
-                            446,
-                            452
+                            611,
+                            617
                           ],
                           "loc": {
                             "start": {
-                              "line": 26,
+                              "line": 32,
                               "column": 8
                             },
                             "end": {
-                              "line": 26,
+                              "line": 32,
                               "column": 14
                             }
                           }
@@ -949,16 +1029,16 @@
                             "type": "Identifier",
                             "name": "vertex_class",
                             "range": [
-                              459,
-                              471
+                              624,
+                              636
                             ],
                             "loc": {
                               "start": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 21
                               },
                               "end": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 33
                               }
                             }
@@ -968,47 +1048,47 @@
                               "type": "Identifier",
                               "name": "value",
                               "range": [
-                                472,
-                                477
+                                637,
+                                642
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 26,
+                                  "line": 32,
                                   "column": 34
                                 },
                                 "end": {
-                                  "line": 26,
+                                  "line": 32,
                                   "column": 39
                                 }
                               }
                             }
                           ],
                           "range": [
-                            455,
-                            478
+                            620,
+                            643
                           ],
                           "loc": {
                             "start": {
-                              "line": 26,
+                              "line": 32,
                               "column": 17
                             },
                             "end": {
-                              "line": 26,
+                              "line": 32,
                               "column": 40
                             }
                           }
                         },
                         "range": [
-                          446,
-                          478
+                          611,
+                          643
                         ],
                         "loc": {
                           "start": {
-                            "line": 26,
+                            "line": 32,
                             "column": 8
                           },
                           "end": {
-                            "line": 26,
+                            "line": 32,
                             "column": 40
                           }
                         }
@@ -1016,16 +1096,16 @@
                     ],
                     "kind": "var",
                     "range": [
-                      442,
-                      479
+                      607,
+                      644
                     ],
                     "loc": {
                       "start": {
-                        "line": 26,
+                        "line": 32,
                         "column": 4
                       },
                       "end": {
-                        "line": 26,
+                        "line": 32,
                         "column": 41
                       }
                     }
@@ -1043,50 +1123,50 @@
                           "object": {
                             "type": "ThisExpression",
                             "range": [
-                              484,
-                              488
+                              649,
+                              653
                             ],
                             "loc": {
                               "start": {
-                                "line": 27,
+                                "line": 33,
                                 "column": 4
                               },
                               "end": {
-                                "line": 27,
+                                "line": 33,
                                 "column": 8
                               }
                             }
                           },
                           "property": {
                             "type": "Identifier",
-                            "name": "vertices",
+                            "name": "_vertices",
                             "range": [
-                              489,
-                              497
+                              654,
+                              663
                             ],
                             "loc": {
                               "start": {
-                                "line": 27,
+                                "line": 33,
                                 "column": 9
                               },
                               "end": {
-                                "line": 27,
-                                "column": 17
+                                "line": 33,
+                                "column": 18
                               }
                             }
                           },
                           "range": [
-                            484,
-                            497
+                            649,
+                            663
                           ],
                           "loc": {
                             "start": {
-                              "line": 27,
+                              "line": 33,
                               "column": 4
                             },
                             "end": {
-                              "line": 27,
-                              "column": 17
+                              "line": 33,
+                              "column": 18
                             }
                           }
                         },
@@ -1094,32 +1174,32 @@
                           "type": "Identifier",
                           "name": "push",
                           "range": [
-                            498,
-                            502
+                            664,
+                            668
                           ],
                           "loc": {
                             "start": {
-                              "line": 27,
-                              "column": 18
+                              "line": 33,
+                              "column": 19
                             },
                             "end": {
-                              "line": 27,
-                              "column": 22
+                              "line": 33,
+                              "column": 23
                             }
                           }
                         },
                         "range": [
-                          484,
-                          502
+                          649,
+                          668
                         ],
                         "loc": {
                           "start": {
-                            "line": 27,
+                            "line": 33,
                             "column": 4
                           },
                           "end": {
-                            "line": 27,
-                            "column": 22
+                            "line": 33,
+                            "column": 23
                           }
                         }
                       },
@@ -1128,63 +1208,97 @@
                           "type": "Identifier",
                           "name": "vertex",
                           "range": [
-                            503,
-                            509
+                            669,
+                            675
                           ],
                           "loc": {
                             "start": {
-                              "line": 27,
-                              "column": 23
+                              "line": 33,
+                              "column": 24
                             },
                             "end": {
-                              "line": 27,
-                              "column": 29
+                              "line": 33,
+                              "column": 30
                             }
                           }
                         }
                       ],
                       "range": [
-                        484,
-                        510
+                        649,
+                        676
                       ],
                       "loc": {
                         "start": {
-                          "line": 27,
+                          "line": 33,
                           "column": 4
                         },
                         "end": {
-                          "line": 27,
-                          "column": 30
+                          "line": 33,
+                          "column": 31
                         }
                       }
                     },
                     "range": [
-                      484,
-                      511
+                      649,
+                      677
                     ],
                     "loc": {
                       "start": {
-                        "line": 27,
+                        "line": 33,
                         "column": 4
                       },
                       "end": {
-                        "line": 27,
-                        "column": 31
+                        "line": 33,
+                        "column": 32
+                      }
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ThisExpression",
+                      "range": [
+                        689,
+                        693
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 34,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 15
+                        }
+                      }
+                    },
+                    "range": [
+                      682,
+                      694
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 16
                       }
                     }
                   }
                 ],
                 "range": [
-                  436,
-                  515
+                  601,
+                  698
                 ],
                 "loc": {
                   "start": {
-                    "line": 25,
+                    "line": 31,
                     "column": 39
                   },
                   "end": {
-                    "line": 28,
+                    "line": 35,
                     "column": 3
                   }
                 }
@@ -1192,16 +1306,16 @@
               "generator": false,
               "expression": false,
               "range": [
-                408,
-                515
+                573,
+                698
               ],
               "loc": {
                 "start": {
-                  "line": 25,
+                  "line": 31,
                   "column": 11
                 },
                 "end": {
-                  "line": 28,
+                  "line": 35,
                   "column": 3
                 }
               }
@@ -1209,34 +1323,34 @@
             "kind": "method",
             "computed": false,
             "range": [
-              399,
-              515
+              564,
+              698
             ],
             "loc": {
               "start": {
-                "line": 25,
+                "line": 31,
                 "column": 2
               },
               "end": {
-                "line": 28,
+                "line": 35,
                 "column": 3
               }
             },
             "leadingComments": [
               {
                 "type": "Block",
-                "value": "*\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   ",
+                "value": "*\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   ",
                 "range": [
-                  304,
-                  396
+                  457,
+                  561
                 ],
                 "loc": {
                   "start": {
-                    "line": 21,
+                    "line": 27,
                     "column": 2
                   },
                   "end": {
-                    "line": 24,
+                    "line": 30,
                     "column": 5
                   }
                 }
@@ -1247,7 +1361,7 @@
         ],
         "range": [
           97,
-          520
+          703
         ],
         "loc": {
           "start": {
@@ -1255,14 +1369,14 @@
             "column": 12
           },
           "end": {
-            "line": 32,
+            "line": 39,
             "column": 1
           }
         }
       },
       "range": [
         85,
-        520
+        703
       ],
       "loc": {
         "start": {
@@ -1270,7 +1384,7 @@
           "column": 0
         },
         "end": {
-          "line": 32,
+          "line": 39,
           "column": 1
         }
       },
@@ -1284,31 +1398,31 @@
         "type": "Identifier",
         "name": "Graph",
         "range": [
-          537,
-          542
+          720,
+          725
         ],
         "loc": {
           "start": {
-            "line": 34,
+            "line": 41,
             "column": 15
           },
           "end": {
-            "line": 34,
+            "line": 41,
             "column": 20
           }
         }
       },
       "range": [
-        522,
-        543
+        705,
+        726
       ],
       "loc": {
         "start": {
-          "line": 34,
+          "line": 41,
           "column": 0
         },
         "end": {
-          "line": 34,
+          "line": 41,
           "column": 21
         }
       },
@@ -1396,10 +1510,10 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "name": "vertices",
+                            "name": "_vertices",
                             "range": [
                               125,
-                              133
+                              134
                             ],
                             "loc": {
                               "start": {
@@ -1408,13 +1522,13 @@
                               },
                               "end": {
                                 "line": 8,
-                                "column": 17
+                                "column": 18
                               }
                             }
                           },
                           "range": [
                             120,
-                            133
+                            134
                           ],
                           "loc": {
                             "start": {
@@ -1423,7 +1537,7 @@
                             },
                             "end": {
                               "line": 8,
-                              "column": 17
+                              "column": 18
                             }
                           }
                         },
@@ -1431,23 +1545,23 @@
                           "type": "ArrayExpression",
                           "elements": [],
                           "range": [
-                            136,
-                            138
+                            137,
+                            139
                           ],
                           "loc": {
                             "start": {
                               "line": 8,
-                              "column": 20
+                              "column": 21
                             },
                             "end": {
                               "line": 8,
-                              "column": 22
+                              "column": 23
                             }
                           }
                         },
                         "range": [
                           120,
-                          138
+                          139
                         ],
                         "loc": {
                           "start": {
@@ -1456,13 +1570,13 @@
                           },
                           "end": {
                             "line": 8,
-                            "column": 22
+                            "column": 23
                           }
                         }
                       },
                       "range": [
                         120,
-                        139
+                        140
                       ],
                       "loc": {
                         "start": {
@@ -1471,14 +1585,14 @@
                         },
                         "end": {
                           "line": 8,
-                          "column": 23
+                          "column": 24
                         }
                       }
                     }
                   ],
                   "range": [
                     114,
-                    143
+                    144
                   ],
                   "loc": {
                     "start": {
@@ -1495,7 +1609,7 @@
                 "expression": false,
                 "range": [
                   112,
-                  143
+                  144
                 ],
                 "loc": {
                   "start": {
@@ -1512,7 +1626,7 @@
               "computed": false,
               "range": [
                 101,
-                143
+                144
               ],
               "loc": {
                 "start": {
@@ -1524,6 +1638,26 @@
                   "column": 3
                 }
               },
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n   * @return {Array} array of all Vertex instances in this graph.\n   ",
+                  "range": [
+                    148,
+                    223
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
               "static": false
             },
             {
@@ -1532,16 +1666,16 @@
                 "type": "Identifier",
                 "name": "getVertices",
                 "range": [
-                  147,
-                  158
+                  226,
+                  237
                 ],
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 14,
                     "column": 2
                   },
                   "end": {
-                    "line": 11,
+                    "line": 14,
                     "column": 13
                   }
                 }
@@ -1561,80 +1695,80 @@
                         "object": {
                           "type": "ThisExpression",
                           "range": [
-                            173,
-                            177
+                            252,
+                            256
                           ],
                           "loc": {
                             "start": {
-                              "line": 12,
+                              "line": 15,
                               "column": 11
                             },
                             "end": {
-                              "line": 12,
+                              "line": 15,
                               "column": 15
                             }
                           }
                         },
                         "property": {
                           "type": "Identifier",
-                          "name": "vertices",
+                          "name": "_vertices",
                           "range": [
-                            178,
-                            186
+                            257,
+                            266
                           ],
                           "loc": {
                             "start": {
-                              "line": 12,
+                              "line": 15,
                               "column": 16
                             },
                             "end": {
-                              "line": 12,
-                              "column": 24
+                              "line": 15,
+                              "column": 25
                             }
                           }
                         },
                         "range": [
-                          173,
-                          186
+                          252,
+                          266
                         ],
                         "loc": {
                           "start": {
-                            "line": 12,
+                            "line": 15,
                             "column": 11
                           },
                           "end": {
-                            "line": 12,
-                            "column": 24
+                            "line": 15,
+                            "column": 25
                           }
                         }
                       },
                       "range": [
-                        166,
-                        187
+                        245,
+                        267
                       ],
                       "loc": {
                         "start": {
-                          "line": 12,
+                          "line": 15,
                           "column": 4
                         },
                         "end": {
-                          "line": 12,
-                          "column": 25
+                          "line": 15,
+                          "column": 26
                         }
                       }
                     }
                   ],
                   "range": [
-                    160,
-                    191
+                    239,
+                    271
                   ],
                   "loc": {
                     "start": {
-                      "line": 11,
+                      "line": 14,
                       "column": 15
                     },
                     "end": {
-                      "line": 13,
+                      "line": 16,
                       "column": 3
                     }
                   }
@@ -1642,16 +1776,16 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  158,
-                  191
+                  237,
+                  271
                 ],
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 14,
                     "column": 13
                   },
                   "end": {
-                    "line": 13,
+                    "line": 16,
                     "column": 3
                   }
                 }
@@ -1659,19 +1793,59 @@
               "kind": "method",
               "computed": false,
               "range": [
-                147,
-                191
+                226,
+                271
               ],
               "loc": {
                 "start": {
-                  "line": 11,
+                  "line": 14,
                   "column": 2
                 },
                 "end": {
-                  "line": 13,
+                  "line": 16,
                   "column": 3
                 }
               },
+              "leadingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n   * @return {Array} array of all Vertex instances in this graph.\n   ",
+                  "range": [
+                    148,
+                    223
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n   * @return {Array} array of values in all graph vertices.\n   ",
+                  "range": [
+                    275,
+                    344
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
               "static": false
             },
             {
@@ -1680,16 +1854,16 @@
                 "type": "Identifier",
                 "name": "getVertexValues",
                 "range": [
-                  195,
-                  210
+                  347,
+                  362
                 ],
                 "loc": {
                   "start": {
-                    "line": 15,
+                    "line": 21,
                     "column": 2
                   },
                   "end": {
-                    "line": 15,
+                    "line": 21,
                     "column": 17
                   }
                 }
@@ -1714,50 +1888,50 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                225,
-                                229
+                                377,
+                                381
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 16,
+                                  "line": 22,
                                   "column": 11
                                 },
                                 "end": {
-                                  "line": 16,
+                                  "line": 22,
                                   "column": 15
                                 }
                               }
                             },
                             "property": {
                               "type": "Identifier",
-                              "name": "vertices",
+                              "name": "_vertices",
                               "range": [
-                                230,
-                                238
+                                382,
+                                391
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 16,
+                                  "line": 22,
                                   "column": 16
                                 },
                                 "end": {
-                                  "line": 16,
-                                  "column": 24
+                                  "line": 22,
+                                  "column": 25
                                 }
                               }
                             },
                             "range": [
-                              225,
-                              238
+                              377,
+                              391
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
+                                "line": 22,
                                 "column": 11
                               },
                               "end": {
-                                "line": 16,
-                                "column": 24
+                                "line": 22,
+                                "column": 25
                               }
                             }
                           },
@@ -1765,32 +1939,32 @@
                             "type": "Identifier",
                             "name": "map",
                             "range": [
-                              239,
-                              242
+                              392,
+                              395
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
-                                "column": 25
+                                "line": 22,
+                                "column": 26
                               },
                               "end": {
-                                "line": 16,
-                                "column": 28
+                                "line": 22,
+                                "column": 29
                               }
                             }
                           },
                           "range": [
-                            225,
-                            242
+                            377,
+                            395
                           ],
                           "loc": {
                             "start": {
-                              "line": 16,
+                              "line": 22,
                               "column": 11
                             },
                             "end": {
-                              "line": 16,
-                              "column": 28
+                              "line": 22,
+                              "column": 29
                             }
                           }
                         },
@@ -1803,17 +1977,17 @@
                                 "type": "Identifier",
                                 "name": "vertex",
                                 "range": [
-                                  244,
-                                  250
+                                  397,
+                                  403
                                 ],
                                 "loc": {
                                   "start": {
-                                    "line": 16,
-                                    "column": 30
+                                    "line": 22,
+                                    "column": 31
                                   },
                                   "end": {
-                                    "line": 16,
-                                    "column": 36
+                                    "line": 22,
+                                    "column": 37
                                   }
                                 }
                               }
@@ -1832,16 +2006,16 @@
                                         "type": "Identifier",
                                         "name": "vertex",
                                         "range": [
-                                          270,
-                                          276
+                                          423,
+                                          429
                                         ],
                                         "loc": {
                                           "start": {
-                                            "line": 17,
+                                            "line": 23,
                                             "column": 13
                                           },
                                           "end": {
-                                            "line": 17,
+                                            "line": 23,
                                             "column": 19
                                           }
                                         }
@@ -1850,78 +2024,78 @@
                                         "type": "Identifier",
                                         "name": "getValue",
                                         "range": [
-                                          277,
-                                          285
+                                          430,
+                                          438
                                         ],
                                         "loc": {
                                           "start": {
-                                            "line": 17,
+                                            "line": 23,
                                             "column": 20
                                           },
                                           "end": {
-                                            "line": 17,
+                                            "line": 23,
                                             "column": 28
                                           }
                                         }
                                       },
                                       "range": [
-                                        270,
-                                        285
+                                        423,
+                                        438
                                       ],
                                       "loc": {
                                         "start": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 13
                                         },
                                         "end": {
-                                          "line": 17,
+                                          "line": 23,
                                           "column": 28
                                         }
                                       }
                                     },
                                     "arguments": [],
                                     "range": [
-                                      270,
-                                      287
+                                      423,
+                                      440
                                     ],
                                     "loc": {
                                       "start": {
-                                        "line": 17,
+                                        "line": 23,
                                         "column": 13
                                       },
                                       "end": {
-                                        "line": 17,
+                                        "line": 23,
                                         "column": 30
                                       }
                                     }
                                   },
                                   "range": [
-                                    263,
-                                    288
+                                    416,
+                                    441
                                   ],
                                   "loc": {
                                     "start": {
-                                      "line": 17,
+                                      "line": 23,
                                       "column": 6
                                     },
                                     "end": {
-                                      "line": 17,
+                                      "line": 23,
                                       "column": 31
                                     }
                                   }
                                 }
                               ],
                               "range": [
-                                255,
-                                294
+                                408,
+                                447
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 16,
-                                  "column": 41
+                                  "line": 22,
+                                  "column": 42
                                 },
                                 "end": {
-                                  "line": 18,
+                                  "line": 24,
                                   "column": 5
                                 }
                               }
@@ -1929,63 +2103,63 @@
                             "generator": false,
                             "expression": false,
                             "range": [
-                              243,
-                              294
+                              396,
+                              447
                             ],
                             "loc": {
                               "start": {
-                                "line": 16,
-                                "column": 29
+                                "line": 22,
+                                "column": 30
                               },
                               "end": {
-                                "line": 18,
+                                "line": 24,
                                 "column": 5
                               }
                             }
                           }
                         ],
                         "range": [
-                          225,
-                          295
+                          377,
+                          448
                         ],
                         "loc": {
                           "start": {
-                            "line": 16,
+                            "line": 22,
                             "column": 11
                           },
                           "end": {
-                            "line": 18,
+                            "line": 24,
                             "column": 6
                           }
                         }
                       },
                       "range": [
-                        218,
-                        296
+                        370,
+                        449
                       ],
                       "loc": {
                         "start": {
-                          "line": 16,
+                          "line": 22,
                           "column": 4
                         },
                         "end": {
-                          "line": 18,
+                          "line": 24,
                           "column": 7
                         }
                       }
                     }
                   ],
                   "range": [
-                    212,
-                    300
+                    364,
+                    453
                   ],
                   "loc": {
                     "start": {
-                      "line": 15,
+                      "line": 21,
                       "column": 19
                     },
                     "end": {
-                      "line": 19,
+                      "line": 25,
                       "column": 3
                     }
                   }
@@ -1993,16 +2167,16 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  210,
-                  300
+                  362,
+                  453
                 ],
                 "loc": {
                   "start": {
-                    "line": 15,
+                    "line": 21,
                     "column": 17
                   },
                   "end": {
-                    "line": 19,
+                    "line": 25,
                     "column": 3
                   }
                 }
@@ -2010,34 +2184,54 @@
               "kind": "method",
               "computed": false,
               "range": [
-                195,
-                300
+                347,
+                453
               ],
               "loc": {
                 "start": {
-                  "line": 15,
+                  "line": 21,
                   "column": 2
                 },
                 "end": {
-                  "line": 19,
+                  "line": 25,
                   "column": 3
                 }
               },
-              "trailingComments": [
+              "leadingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   ",
+                  "value": "*\n   * @return {Array} array of values in all graph vertices.\n   ",
                   "range": [
-                    304,
-                    396
+                    275,
+                    344
                   ],
                   "loc": {
                     "start": {
-                      "line": 21,
+                      "line": 18,
                       "column": 2
                     },
                     "end": {
-                      "line": 24,
+                      "line": 20,
+                      "column": 5
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "Block",
+                  "value": "*\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   ",
+                  "range": [
+                    457,
+                    561
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 27,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 30,
                       "column": 5
                     }
                   }
@@ -2051,16 +2245,16 @@
                 "type": "Identifier",
                 "name": "addVertex",
                 "range": [
-                  399,
-                  408
+                  564,
+                  573
                 ],
                 "loc": {
                   "start": {
-                    "line": 25,
+                    "line": 31,
                     "column": 2
                   },
                   "end": {
-                    "line": 25,
+                    "line": 31,
                     "column": 11
                   }
                 }
@@ -2073,16 +2267,16 @@
                     "type": "Identifier",
                     "name": "value",
                     "range": [
-                      409,
-                      414
+                      574,
+                      579
                     ],
                     "loc": {
                       "start": {
-                        "line": 25,
+                        "line": 31,
                         "column": 12
                       },
                       "end": {
-                        "line": 25,
+                        "line": 31,
                         "column": 17
                       }
                     }
@@ -2093,16 +2287,16 @@
                       "type": "Identifier",
                       "name": "vertex_class",
                       "range": [
-                        416,
-                        428
+                        581,
+                        593
                       ],
                       "loc": {
                         "start": {
-                          "line": 25,
+                          "line": 31,
                           "column": 19
                         },
                         "end": {
-                          "line": 25,
+                          "line": 31,
                           "column": 31
                         }
                       }
@@ -2111,31 +2305,31 @@
                       "type": "Identifier",
                       "name": "Vertex",
                       "range": [
-                        429,
-                        435
+                        594,
+                        600
                       ],
                       "loc": {
                         "start": {
-                          "line": 25,
+                          "line": 31,
                           "column": 32
                         },
                         "end": {
-                          "line": 25,
+                          "line": 31,
                           "column": 38
                         }
                       }
                     },
                     "range": [
-                      416,
-                      435
+                      581,
+                      600
                     ],
                     "loc": {
                       "start": {
-                        "line": 25,
+                        "line": 31,
                         "column": 19
                       },
                       "end": {
-                        "line": 25,
+                        "line": 31,
                         "column": 38
                       }
                     }
@@ -2153,16 +2347,16 @@
                             "type": "Identifier",
                             "name": "vertex",
                             "range": [
-                              446,
-                              452
+                              611,
+                              617
                             ],
                             "loc": {
                               "start": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 8
                               },
                               "end": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 14
                               }
                             }
@@ -2173,16 +2367,16 @@
                               "type": "Identifier",
                               "name": "vertex_class",
                               "range": [
-                                459,
-                                471
+                                624,
+                                636
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 26,
+                                  "line": 32,
                                   "column": 21
                                 },
                                 "end": {
-                                  "line": 26,
+                                  "line": 32,
                                   "column": 33
                                 }
                               }
@@ -2192,47 +2386,47 @@
                                 "type": "Identifier",
                                 "name": "value",
                                 "range": [
-                                  472,
-                                  477
+                                  637,
+                                  642
                                 ],
                                 "loc": {
                                   "start": {
-                                    "line": 26,
+                                    "line": 32,
                                     "column": 34
                                   },
                                   "end": {
-                                    "line": 26,
+                                    "line": 32,
                                     "column": 39
                                   }
                                 }
                               }
                             ],
                             "range": [
-                              455,
-                              478
+                              620,
+                              643
                             ],
                             "loc": {
                               "start": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 17
                               },
                               "end": {
-                                "line": 26,
+                                "line": 32,
                                 "column": 40
                               }
                             }
                           },
                           "range": [
-                            446,
-                            478
+                            611,
+                            643
                           ],
                           "loc": {
                             "start": {
-                              "line": 26,
+                              "line": 32,
                               "column": 8
                             },
                             "end": {
-                              "line": 26,
+                              "line": 32,
                               "column": 40
                             }
                           }
@@ -2240,16 +2434,16 @@
                       ],
                       "kind": "var",
                       "range": [
-                        442,
-                        479
+                        607,
+                        644
                       ],
                       "loc": {
                         "start": {
-                          "line": 26,
+                          "line": 32,
                           "column": 4
                         },
                         "end": {
-                          "line": 26,
+                          "line": 32,
                           "column": 41
                         }
                       }
@@ -2267,50 +2461,50 @@
                             "object": {
                               "type": "ThisExpression",
                               "range": [
-                                484,
-                                488
+                                649,
+                                653
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 27,
+                                  "line": 33,
                                   "column": 4
                                 },
                                 "end": {
-                                  "line": 27,
+                                  "line": 33,
                                   "column": 8
                                 }
                               }
                             },
                             "property": {
                               "type": "Identifier",
-                              "name": "vertices",
+                              "name": "_vertices",
                               "range": [
-                                489,
-                                497
+                                654,
+                                663
                               ],
                               "loc": {
                                 "start": {
-                                  "line": 27,
+                                  "line": 33,
                                   "column": 9
                                 },
                                 "end": {
-                                  "line": 27,
-                                  "column": 17
+                                  "line": 33,
+                                  "column": 18
                                 }
                               }
                             },
                             "range": [
-                              484,
-                              497
+                              649,
+                              663
                             ],
                             "loc": {
                               "start": {
-                                "line": 27,
+                                "line": 33,
                                 "column": 4
                               },
                               "end": {
-                                "line": 27,
-                                "column": 17
+                                "line": 33,
+                                "column": 18
                               }
                             }
                           },
@@ -2318,32 +2512,32 @@
                             "type": "Identifier",
                             "name": "push",
                             "range": [
-                              498,
-                              502
+                              664,
+                              668
                             ],
                             "loc": {
                               "start": {
-                                "line": 27,
-                                "column": 18
+                                "line": 33,
+                                "column": 19
                               },
                               "end": {
-                                "line": 27,
-                                "column": 22
+                                "line": 33,
+                                "column": 23
                               }
                             }
                           },
                           "range": [
-                            484,
-                            502
+                            649,
+                            668
                           ],
                           "loc": {
                             "start": {
-                              "line": 27,
+                              "line": 33,
                               "column": 4
                             },
                             "end": {
-                              "line": 27,
-                              "column": 22
+                              "line": 33,
+                              "column": 23
                             }
                           }
                         },
@@ -2352,63 +2546,97 @@
                             "type": "Identifier",
                             "name": "vertex",
                             "range": [
-                              503,
-                              509
+                              669,
+                              675
                             ],
                             "loc": {
                               "start": {
-                                "line": 27,
-                                "column": 23
+                                "line": 33,
+                                "column": 24
                               },
                               "end": {
-                                "line": 27,
-                                "column": 29
+                                "line": 33,
+                                "column": 30
                               }
                             }
                           }
                         ],
                         "range": [
-                          484,
-                          510
+                          649,
+                          676
                         ],
                         "loc": {
                           "start": {
-                            "line": 27,
+                            "line": 33,
                             "column": 4
                           },
                           "end": {
-                            "line": 27,
-                            "column": 30
+                            "line": 33,
+                            "column": 31
                           }
                         }
                       },
                       "range": [
-                        484,
-                        511
+                        649,
+                        677
                       ],
                       "loc": {
                         "start": {
-                          "line": 27,
+                          "line": 33,
                           "column": 4
                         },
                         "end": {
-                          "line": 27,
-                          "column": 31
+                          "line": 33,
+                          "column": 32
+                        }
+                      }
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "ThisExpression",
+                        "range": [
+                          689,
+                          693
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 34,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 34,
+                            "column": 15
+                          }
+                        }
+                      },
+                      "range": [
+                        682,
+                        694
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 34,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 16
                         }
                       }
                     }
                   ],
                   "range": [
-                    436,
-                    515
+                    601,
+                    698
                   ],
                   "loc": {
                     "start": {
-                      "line": 25,
+                      "line": 31,
                       "column": 39
                     },
                     "end": {
-                      "line": 28,
+                      "line": 35,
                       "column": 3
                     }
                   }
@@ -2416,16 +2644,16 @@
                 "generator": false,
                 "expression": false,
                 "range": [
-                  408,
-                  515
+                  573,
+                  698
                 ],
                 "loc": {
                   "start": {
-                    "line": 25,
+                    "line": 31,
                     "column": 11
                   },
                   "end": {
-                    "line": 28,
+                    "line": 35,
                     "column": 3
                   }
                 }
@@ -2433,34 +2661,34 @@
               "kind": "method",
               "computed": false,
               "range": [
-                399,
-                515
+                564,
+                698
               ],
               "loc": {
                 "start": {
-                  "line": 25,
+                  "line": 31,
                   "column": 2
                 },
                 "end": {
-                  "line": 28,
+                  "line": 35,
                   "column": 3
                 }
               },
               "leadingComments": [
                 {
                   "type": "Block",
-                  "value": "*\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   ",
+                  "value": "*\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   ",
                   "range": [
-                    304,
-                    396
+                    457,
+                    561
                   ],
                   "loc": {
                     "start": {
-                      "line": 21,
+                      "line": 27,
                       "column": 2
                     },
                     "end": {
-                      "line": 24,
+                      "line": 30,
                       "column": 5
                     }
                   }
@@ -2471,7 +2699,7 @@
           ],
           "range": [
             97,
-            520
+            703
           ],
           "loc": {
             "start": {
@@ -2479,14 +2707,14 @@
               "column": 12
             },
             "end": {
-              "line": 32,
+              "line": 39,
               "column": 1
             }
           }
         },
         "range": [
           85,
-          520
+          703
         ],
         "loc": {
           "start": {
@@ -2494,7 +2722,7 @@
             "column": 0
           },
           "end": {
-            "line": 32,
+            "line": 39,
             "column": 1
           }
         },
@@ -2522,16 +2750,16 @@
         "trailingComments": []
       },
       "range": [
-        522,
-        543
+        705,
+        726
       ],
       "loc": {
         "start": {
-          "line": 34,
+          "line": 41,
           "column": 0
         },
         "end": {
-          "line": 34,
+          "line": 41,
           "column": 21
         }
       },
@@ -2541,7 +2769,7 @@
   "sourceType": "module",
   "range": [
     0,
-    543
+    726
   ],
   "loc": {
     "start": {
@@ -2549,7 +2777,7 @@
       "column": 0
     },
     "end": {
-      "line": 34,
+      "line": 41,
       "column": 21
     }
   },
@@ -2574,18 +2802,54 @@
     },
     {
       "type": "Block",
-      "value": "*\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   ",
+      "value": "*\n   * @return {Array} array of all Vertex instances in this graph.\n   ",
       "range": [
-        304,
-        396
+        148,
+        223
       ],
       "loc": {
         "start": {
-          "line": 21,
+          "line": 11,
           "column": 2
         },
         "end": {
-          "line": 24,
+          "line": 13,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n   * @return {Array} array of values in all graph vertices.\n   ",
+      "range": [
+        275,
+        344
+      ],
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 2
+        },
+        "end": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "Block",
+      "value": "*\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   ",
+      "range": [
+        457,
+        561
+      ],
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 2
+        },
+        "end": {
+          "line": 30,
           "column": 5
         }
       }

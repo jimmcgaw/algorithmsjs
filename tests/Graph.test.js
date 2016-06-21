@@ -14,6 +14,18 @@ describe('Graph', () => {
     expect(vertices.length).to.equal(0);
   });
 
+  describe('#hasVertexWithValue', () => {
+    it('returns false if graph does not have Vertex with supplied value', function () {
+      graph.addVertex('B');
+      expect(graph.hasVertexWithValue('C')).to.equal(false);
+    });
+
+    it('returns true if graph has Vertex with supplied value', function () {
+      graph.addVertex('B');
+      expect(graph.hasVertexWithValue('B')).to.equal(true);
+    });
+  })
+
   describe('#addVertex', () => {
     it('adds a vertex to the graph', function () {
       graph.addVertex('A');

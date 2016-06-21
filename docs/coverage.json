@@ -1,16 +1,13 @@
 {
-  "coverage": "20%",
-  "expectCount": 10,
-  "actualCount": 2,
+  "coverage": "44.44%",
+  "expectCount": 9,
+  "actualCount": 4,
   "files": {
     "src/Graph.js": {
-      "expectCount": 6,
-      "actualCount": 2,
+      "expectCount": 5,
+      "actualCount": 4,
       "undocumentLines": [
-        7,
-        15,
-        11,
-        8
+        7
       ]
     },
     "src/Vertex.js": {

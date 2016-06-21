@@ -104,7 +104,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import Vertex from './Vertex';\n\n/**\n * Graph: represents a graph data structure.\n */\nclass Graph {\n  constructor(){\n    this.vertices = [];\n  }\n\n  getVertices(){\n    return this.vertices;\n  }\n\n  getVertexValues(){\n    return this.vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {void} this is return.\n   */\n  addVertex(value, vertex_class=Vertex){\n    var vertex = new vertex_class(value);\n    this.vertices.push(vertex);\n  }\n\n\n\n}\n\nexport default Graph;\n"
+    "content": "import Vertex from './Vertex';\n\n/**\n * Graph: represents a graph data structure.\n */\nclass Graph {\n  constructor(){\n    this._vertices = [];\n  }\n\n  /**\n   * @return {Array} array of all Vertex instances in this graph.\n   */\n  getVertices(){\n    return this._vertices;\n  }\n\n  /**\n   * @return {Array} array of values in all graph vertices.\n   */\n  getVertexValues(){\n    return this._vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   */\n  addVertex(value, vertex_class=Vertex){\n    var vertex = new vertex_class(value);\n    this._vertices.push(vertex);\n    return this;\n  }\n\n\n\n}\n\nexport default Graph;\n"
   },
   {
     "__docId__": 6,
@@ -142,9 +142,9 @@
     "kind": "member",
     "static": false,
     "variation": null,
-    "name": "vertices",
+    "name": "_vertices",
     "memberof": "src/Graph.js~Graph",
-    "longname": "src/Graph.js~Graph#vertices",
+    "longname": "src/Graph.js~Graph#_vertices",
     "access": null,
     "description": null,
     "lineNumber": 8,
@@ -164,14 +164,16 @@
     "memberof": "src/Graph.js~Graph",
     "longname": "src/Graph.js~Graph#getVertices",
     "access": null,
-    "description": null,
-    "lineNumber": 11,
-    "undocument": true,
+    "description": "",
+    "lineNumber": 14,
     "params": [],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "array of all Vertex instances in this graph."
     },
     "generator": false
   },
@@ -184,14 +186,16 @@
     "memberof": "src/Graph.js~Graph",
     "longname": "src/Graph.js~Graph#getVertexValues",
     "access": null,
-    "description": null,
-    "lineNumber": 15,
-    "undocument": true,
+    "description": "",
+    "lineNumber": 21,
     "params": [],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": "array of values in all graph vertices."
     },
     "generator": false
   },
@@ -205,7 +209,7 @@
     "longname": "src/Graph.js~Graph#addVertex",
     "access": null,
     "description": "",
-    "lineNumber": 25,
+    "lineNumber": 31,
     "params": [
       {
         "nullable": null,
@@ -221,10 +225,10 @@
     "return": {
       "nullable": null,
       "types": [
-        "void"
+        "Graph"
       ],
       "spread": false,
-      "description": "this is return."
+      "description": "current instance of graph."
     },
     "generator": false
   },

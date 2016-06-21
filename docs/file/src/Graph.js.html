@@ -46,26 +46,33 @@
  */
 class Graph {
   constructor(){
-    this.vertices = [];
+    this._vertices = [];
   }
 
+  /**
+   * @return {Array} array of all Vertex instances in this graph.
+   */
   getVertices(){
-    return this.vertices;
+    return this._vertices;
   }
 
+  /**
+   * @return {Array} array of values in all graph vertices.
+   */
   getVertexValues(){
-    return this.vertices.map((vertex) =&gt; {
+    return this._vertices.map((vertex) =&gt; {
       return vertex.getValue();
     });
   }
 
   /**
    * @param {value} value to set on the vertex
-   * @return {void} this is return.
+   * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
     var vertex = new vertex_class(value);
-    this.vertices.push(vertex);
+    this._vertices.push(vertex);
+    return this;
   }
 
 

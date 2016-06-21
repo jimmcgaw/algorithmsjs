@@ -378,12 +378,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/graph.js~graph#vertices",
-    "class/src/Graph.js~Graph.html#instance-member-vertices",
-    "src/Graph.js~Graph#vertices",
-    "member"
-  ],
-  [
     "src/vertex.js",
     "file/src/Vertex.js.html",
     "src/Vertex.js",

@@ -5,26 +5,42 @@ import Vertex from './Vertex';
  */
 class Graph {
   constructor(){
-    this.vertices = [];
+    this._vertices = [];
   }
 
+  /**
+   * @return {Array} array of all Vertex instances in this graph.
+   */
   getVertices(){
-    return this.vertices;
+    return this._vertices;
   }
 
+  /**
+   * @param {value} value to find in the graph.
+   * @return {Boolean} true if any vertex has this value else false
+   */
+  hasVertexWithValue(value){
+    var vertexValues = this.getVertexValues();
+    return !!~vertexValues.indexOf(value);
+  }
+
+  /**
+   * @return {Array} array of values in all graph vertices.
+   */
   getVertexValues(){
-    return this.vertices.map((vertex) => {
+    return this._vertices.map((vertex) => {
       return vertex.getValue();
     });
   }
 
   /**
    * @param {value} value to set on the vertex
-   * @return {void} this is return.
+   * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
     var vertex = new vertex_class(value);
-    this.vertices.push(vertex);
+    this._vertices.push(vertex);
+    return this;
   }
 
 
