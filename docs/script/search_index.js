@@ -408,6 +408,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/graph/graph.js~graph#addedge",
+    "class/src/graph/Graph.js~Graph.html#instance-method-addEdge",
+    "src/graph/Graph.js~Graph#addEdge",
+    "method"
+  ],
+  [
     "src/graph/graph.js~graph#addvertex",
     "class/src/graph/Graph.js~Graph.html#instance-method-addVertex",
     "src/graph/Graph.js~Graph#addVertex",
@@ -426,6 +432,24 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/graph/graph.js~graph#getedgebyvalues",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getEdgeByValues",
+    "src/graph/Graph.js~Graph#getEdgeByValues",
+    "method"
+  ],
+  [
+    "src/graph/graph.js~graph#getedges",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getEdges",
+    "src/graph/Graph.js~Graph#getEdges",
+    "method"
+  ],
+  [
+    "src/graph/graph.js~graph#getvertexbyvalue",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getVertexByValue",
+    "src/graph/Graph.js~Graph#getVertexByValue",
+    "method"
+  ],
+  [
     "src/graph/graph.js~graph#getvertexvalues",
     "class/src/graph/Graph.js~Graph.html#instance-method-getVertexValues",
     "src/graph/Graph.js~Graph#getVertexValues",
@@ -435,6 +459,12 @@ window.esdocSearchIndex = [
     "src/graph/graph.js~graph#getvertices",
     "class/src/graph/Graph.js~Graph.html#instance-method-getVertices",
     "src/graph/Graph.js~Graph#getVertices",
+    "method"
+  ],
+  [
+    "src/graph/graph.js~graph#hasedge",
+    "class/src/graph/Graph.js~Graph.html#instance-method-hasEdge",
+    "src/graph/Graph.js~Graph#hasEdge",
     "method"
   ],
   [

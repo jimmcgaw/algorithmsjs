@@ -99,8 +99,8 @@
     "longname": "src/graph/Edge.js",
     "access": null,
     "description": null,
-    "lineNumber": 5,
-    "content": "\n/**\n * Edge: represents an edge that can be added to a Graph instance.\n */\nclass Edge {\n  constructor(startVertex, endVertex){\n    this.startVertex = startVertex;\n    this.endVertex = endVertex;\n  }\n}\n\nexport default Edge;\n"
+    "lineNumber": 4,
+    "content": "/**\n * Edge: represents an edge that can be added to a Graph instance.\n */\nclass Edge {\n  constructor(startVertex, endVertex){\n    this.startVertex = startVertex;\n    this.endVertex = endVertex;\n  }\n}\n\nexport default Edge;\n"
   },
   {
     "__docId__": 6,
@@ -115,7 +115,7 @@
     "importPath": "algorithmsjs/src/graph/Edge.js",
     "importStyle": "Edge",
     "description": "Edge: represents an edge that can be added to a Graph instance.",
-    "lineNumber": 5,
+    "lineNumber": 4,
     "interface": false
   },
   {
@@ -128,7 +128,7 @@
     "longname": "src/graph/Edge.js~Edge#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 5,
     "undocument": true,
     "params": [
       {
@@ -156,7 +156,7 @@
     "longname": "src/graph/Edge.js~Edge#startVertex",
     "access": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 6,
     "undocument": true,
     "type": {
       "types": [
@@ -174,7 +174,7 @@
     "longname": "src/graph/Edge.js~Edge#endVertex",
     "access": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 7,
     "undocument": true,
     "type": {
       "types": [
@@ -193,7 +193,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import Vertex from './Vertex';\nimport DuplicateVertexError from './DuplicateVertexError';\n\n/**\n * Graph: represents a graph data structure.\n */\nclass Graph {\n  constructor(){\n    this._vertices = [];\n  }\n\n  /**\n   * @return {Array} array of all Vertex instances in this graph.\n   */\n  getVertices(){\n    return this._vertices;\n  }\n\n  /**\n   * @param {value} value to find in the graph.\n   * @return {Boolean} true if any vertex has this value else false\n   */\n  hasVertexWithValue(value){\n    var vertexValues = this.getVertexValues();\n    return !!~vertexValues.indexOf(value);\n  }\n\n  /**\n   * @return {Array} array of values in all graph vertices.\n   */\n  getVertexValues(){\n    return this._vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   */\n  addVertex(value, vertex_class=Vertex){\n    if (this.hasVertexWithValue(value)){\n      throw new DuplicateVertexError(\"Cannot add duplicate value '\" + value.toString() + \"' to graph.\");\n    } else {\n      var vertex = new vertex_class(value);\n      this._vertices.push(vertex);\n    }\n    return this;\n  }\n\n  /**\n   * @param {values} array of values to add to the graph\n   * @return {Graph} current instance of graph.\n   */\n  addVerticies(values){\n    values.forEach((value) => {\n      this.addVertex(value);\n    });\n  }\n\n\n\n}\n\nexport default Graph;\n"
+    "content": "import Edge from './Edge';\nimport Vertex from './Vertex';\nimport DuplicateVertexError from './DuplicateVertexError';\n\n/**\n * Graph: represents a undirected graph data structure.\n * Usage: let graph = new Graph();\n *        graph.addVertex('A');\n *        graph.addVertex('B');\n *        graph.addEdge('A','B');\n */\nclass Graph {\n  constructor(){\n    this._vertices = [];\n    this._edges = [];\n  }\n\n  /**\n   * @return {Array} array of all Vertex instances in this graph.\n   */\n  getVertices(){\n    return this._vertices;\n  }\n\n  /**\n   * @param {value} value to find in the graph.\n   * @return {Boolean} true if any vertex has this value else false\n   */\n  hasVertexWithValue(value){\n    var vertexValues = this.getVertexValues();\n    return !!~vertexValues.indexOf(value);\n  }\n\n  /**\n   * @return {Array} array of values in all graph vertices.\n   */\n  getVertexValues(){\n    return this._vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   */\n  addVertex(value, vertex_class=Vertex){\n    if (this.hasVertexWithValue(value)){\n      throw new DuplicateVertexError(\"Cannot add duplicate value '\" + value.toString() + \"' to graph.\");\n    } else {\n      var vertex = new vertex_class(value);\n      this._vertices.push(vertex);\n    }\n    return this;\n  }\n\n  /**\n   * @param {values} array of values to add to the graph\n   * @return {Graph} current instance of graph.\n   */\n  addVerticies(values){\n    values.forEach((value) => {\n      this.addVertex(value);\n    });\n    return this;\n  }\n\n  /**\n   * @param {value} value\n   * @return {Vertex} instance of Vertex in graph with value, else undefined\n   */\n  getVertexByValue(value){\n    var vertices = this.getVertices();\n    var matching = vertices.filter((vertex) => {\n      return vertex.value === value;\n    });\n\n    if (matching.length > 0){\n      return matching[0];\n    }\n\n    return undefined;\n  }\n\n  /**\n   * @param {startVertex} Vertex (or value of Vertex) in graph to start\n   * @param {endVertex} Vertex (or value of Vertex) in graph to end\n   * @return {Graph} current instance of graph.\n   */\n   addEdge(startVertex, endVertex){\n     if (!(startVertex instanceof Vertex)){\n       startVertex = this.getVertexByValue(startVertex);\n     }\n\n     if (!(endVertex instanceof Vertex)){\n       endVertex = this.getVertexByValue(endVertex);\n     }\n\n     var edge = new Edge(startVertex, endVertex);\n     this._edges.push(edge);\n\n     // since this undirected graph, edges must go both ways\n     var reverseEdge = new Edge(endVertex, startVertex);\n     this._edges.push(reverseEdge);\n\n     return this;\n   }\n\n   /**\n    * @return {Array} array of Edge instances present in Graph.\n    */\n   getEdges(){\n     return this._edges;\n   }\n\n   /**\n    * @param {startValue} start value of edge to locate\n    * @param {endValue} end value of edge to locate\n    * @return {Edge} returns Edge instance in Graph if exists, otherwise returns undefined \n    */\n   getEdgeByValues(startValue, endValue){\n     let edges = this.getEdges();\n     let matching = edges.filter((edge) => {\n       return edge.startVertex.value === startValue && edge.endVertex.value === endValue;\n     });\n\n     if (matching.length > 0){\n       return matching[0];\n     }\n\n     return undefined;\n   }\n\n   /**\n    * @param {startVertex} start value of edge to locate\n    * @param {endVertex} end value of edge to locate\n    * @return {Boolean} true if any edge has these start and end values else false\n    */\n   hasEdge(startVertex, endVertex){\n     return !!this.getEdgeByValues(startVertex, endVertex);\n   }\n\n\n}\n\nexport default Graph;\n"
   },
   {
     "__docId__": 11,
@@ -207,8 +207,8 @@
     "export": true,
     "importPath": "algorithmsjs/src/graph/Graph.js",
     "importStyle": "Graph",
-    "description": "Graph: represents a graph data structure.",
-    "lineNumber": 7,
+    "description": "Graph: represents a undirected graph data structure.\nUsage: let graph = new Graph();\n       graph.addVertex('A');\n       graph.addVertex('B');\n       graph.addEdge('A','B');",
+    "lineNumber": 12,
     "interface": false
   },
   {
@@ -221,7 +221,7 @@
     "longname": "src/graph/Graph.js~Graph#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 13,
     "undocument": true,
     "params": [],
     "generator": false
@@ -236,7 +236,7 @@
     "longname": "src/graph/Graph.js~Graph#_vertices",
     "access": null,
     "description": null,
-    "lineNumber": 9,
+    "lineNumber": 14,
     "undocument": true,
     "type": {
       "types": [
@@ -246,6 +246,24 @@
   },
   {
     "__docId__": 14,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_edges",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#_edges",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 15,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -254,7 +272,7 @@
     "longname": "src/graph/Graph.js~Graph#getVertices",
     "access": null,
     "description": "",
-    "lineNumber": 15,
+    "lineNumber": 21,
     "params": [],
     "return": {
       "nullable": null,
@@ -267,7 +285,7 @@
     "generator": false
   },
   {
-    "__docId__": 15,
+    "__docId__": 16,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -276,7 +294,7 @@
     "longname": "src/graph/Graph.js~Graph#hasVertexWithValue",
     "access": null,
     "description": "",
-    "lineNumber": 23,
+    "lineNumber": 29,
     "params": [
       {
         "nullable": null,
@@ -300,7 +318,7 @@
     "generator": false
   },
   {
-    "__docId__": 16,
+    "__docId__": 17,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -309,7 +327,7 @@
     "longname": "src/graph/Graph.js~Graph#getVertexValues",
     "access": null,
     "description": "",
-    "lineNumber": 31,
+    "lineNumber": 37,
     "params": [],
     "return": {
       "nullable": null,
@@ -322,7 +340,7 @@
     "generator": false
   },
   {
-    "__docId__": 17,
+    "__docId__": 18,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -331,7 +349,7 @@
     "longname": "src/graph/Graph.js~Graph#addVertex",
     "access": null,
     "description": "",
-    "lineNumber": 41,
+    "lineNumber": 47,
     "params": [
       {
         "nullable": null,
@@ -355,7 +373,7 @@
     "generator": false
   },
   {
-    "__docId__": 18,
+    "__docId__": 19,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -364,7 +382,7 @@
     "longname": "src/graph/Graph.js~Graph#addVerticies",
     "access": null,
     "description": "",
-    "lineNumber": 55,
+    "lineNumber": 61,
     "params": [
       {
         "nullable": null,
@@ -388,7 +406,191 @@
     "generator": false
   },
   {
-    "__docId__": 19,
+    "__docId__": 20,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "getVertexByValue",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#getVertexByValue",
+    "access": null,
+    "description": "",
+    "lineNumber": 72,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "value"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Vertex"
+      ],
+      "spread": false,
+      "description": "instance of Vertex in graph with value, else undefined"
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 21,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "addEdge",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#addEdge",
+    "access": null,
+    "description": "",
+    "lineNumber": 90,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "startVertex"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Vertex",
+        "description": "(or value of Vertex) in graph to start"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "endVertex"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Vertex",
+        "description": "(or value of Vertex) in graph to end"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Graph"
+      ],
+      "spread": false,
+      "description": "current instance of graph."
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 22,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "getEdges",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#getEdges",
+    "access": null,
+    "description": "",
+    "lineNumber": 112,
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "array of Edge instances present in Graph."
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 23,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "getEdgeByValues",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#getEdgeByValues",
+    "access": null,
+    "description": "",
+    "lineNumber": 121,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "startValue"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "value of edge to locate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "endValue"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "end",
+        "description": "value of edge to locate"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Edge"
+      ],
+      "spread": false,
+      "description": "returns Edge instance in Graph if exists, otherwise returns undefined"
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 24,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "hasEdge",
+    "memberof": "src/graph/Graph.js~Graph",
+    "longname": "src/graph/Graph.js~Graph#hasEdge",
+    "access": null,
+    "description": "",
+    "lineNumber": 139,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "startVertex"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "value of edge to locate"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "endVertex"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "end",
+        "description": "value of edge to locate"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "true if any edge has these start and end values else false"
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 25,
     "kind": "file",
     "static": true,
     "variation": null,
@@ -401,7 +603,7 @@
     "content": "/**\n * Vertex: represents a vertex that can be added to a Graph instance.\n */\nclass Vertex {\n  constructor(value){\n    this.value = value;\n  }\n\n  getValue(){\n    return this.value;\n  }\n}\n\nexport default Vertex;\n"
   },
   {
-    "__docId__": 20,
+    "__docId__": 26,
     "kind": "class",
     "static": true,
     "variation": null,
@@ -417,7 +619,7 @@
     "interface": false
   },
   {
-    "__docId__": 21,
+    "__docId__": 27,
     "kind": "constructor",
     "static": false,
     "variation": null,
@@ -439,7 +641,7 @@
     "generator": false
   },
   {
-    "__docId__": 22,
+    "__docId__": 28,
     "kind": "member",
     "static": false,
     "variation": null,
@@ -457,7 +659,7 @@
     }
   },
   {
-    "__docId__": 23,
+    "__docId__": 29,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -477,7 +679,7 @@
     "generator": false
   },
   {
-    "__docId__": 25,
+    "__docId__": 31,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -490,7 +692,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 26,
+    "__docId__": 32,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -503,7 +705,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 27,
+    "__docId__": 33,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -516,7 +718,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 28,
+    "__docId__": 34,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -529,7 +731,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 29,
+    "__docId__": 35,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -542,7 +744,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 30,
+    "__docId__": 36,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -555,7 +757,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 31,
+    "__docId__": 37,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -568,7 +770,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 32,
+    "__docId__": 38,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -581,7 +783,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 33,
+    "__docId__": 39,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -594,7 +796,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 34,
+    "__docId__": 40,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -607,7 +809,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 35,
+    "__docId__": 41,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -620,7 +822,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 36,
+    "__docId__": 42,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -633,7 +835,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 37,
+    "__docId__": 43,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -646,7 +848,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 38,
+    "__docId__": 44,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -659,7 +861,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 39,
+    "__docId__": 45,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -672,7 +874,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 40,
+    "__docId__": 46,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -685,7 +887,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 41,
+    "__docId__": 47,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -698,7 +900,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 42,
+    "__docId__": 48,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -711,7 +913,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 43,
+    "__docId__": 49,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -724,7 +926,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 44,
+    "__docId__": 50,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -737,7 +939,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 45,
+    "__docId__": 51,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -750,7 +952,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 46,
+    "__docId__": 52,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -763,7 +965,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 47,
+    "__docId__": 53,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -776,7 +978,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 48,
+    "__docId__": 54,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -789,7 +991,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 49,
+    "__docId__": 55,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -802,7 +1004,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 50,
+    "__docId__": 56,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -815,7 +1017,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 51,
+    "__docId__": 57,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -828,7 +1030,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 52,
+    "__docId__": 58,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -841,7 +1043,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 53,
+    "__docId__": 59,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -854,7 +1056,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 54,
+    "__docId__": 60,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -867,7 +1069,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 55,
+    "__docId__": 61,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -880,7 +1082,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 56,
+    "__docId__": 62,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -893,7 +1095,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 57,
+    "__docId__": 63,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -906,7 +1108,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 58,
+    "__docId__": 64,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -919,7 +1121,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 59,
+    "__docId__": 65,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -932,7 +1134,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 60,
+    "__docId__": 66,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -945,7 +1147,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 67,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -958,7 +1160,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 62,
+    "__docId__": 68,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -971,7 +1173,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 63,
+    "__docId__": 69,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -984,7 +1186,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 64,
+    "__docId__": 70,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -997,7 +1199,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 65,
+    "__docId__": 71,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1010,7 +1212,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 66,
+    "__docId__": 72,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1023,7 +1225,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 67,
+    "__docId__": 73,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1036,7 +1238,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 68,
+    "__docId__": 74,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1049,7 +1251,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 69,
+    "__docId__": 75,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1062,7 +1264,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 70,
+    "__docId__": 76,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1075,7 +1277,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 71,
+    "__docId__": 77,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1088,7 +1290,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 73,
+    "__docId__": 79,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1101,7 +1303,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 74,
+    "__docId__": 80,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1114,7 +1316,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 75,
+    "__docId__": 81,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1127,7 +1329,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 76,
+    "__docId__": 82,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1140,7 +1342,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 77,
+    "__docId__": 83,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1153,7 +1355,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 78,
+    "__docId__": 84,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1166,7 +1368,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 79,
+    "__docId__": 85,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1179,7 +1381,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 80,
+    "__docId__": 86,
     "kind": "external",
     "static": true,
     "variation": null,

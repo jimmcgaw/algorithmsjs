@@ -41,13 +41,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Graph from &apos;<span><a href="file/src/graph/Graph.js.html#lineNumber7">algorithmsjs/src/graph/Graph.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Graph from &apos;<span><a href="file/src/graph/Graph.js.html#lineNumber12">algorithmsjs/src/graph/Graph.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/graph/Graph.js.html#lineNumber7">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/graph/Graph.js.html#lineNumber12">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -67,7 +67,11 @@
 
   
   
-  <div class="description" data-ice="description"><p>Graph: represents a graph data structure.</p>
+  <div class="description" data-ice="description"><p>Graph: represents a undirected graph data structure.
+Usage: let graph = new Graph();
+       graph.addVertex(&apos;A&apos;);
+       graph.addVertex(&apos;B&apos;);
+       graph.addEdge(&apos;A&apos;,&apos;B&apos;);</p>
 </div>
 
   
@@ -129,6 +133,31 @@
     <td>
       <div>
         <p>
+           <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-addEdge">addEdge</a></span></span><span data-ice="signature">(Vertex: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span>, Vertex: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span>): <span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
            <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-addVertex">addVertex</a></span></span><span data-ice="signature">(value: <span><a href="class/src/graph/Vertex.js~Vertex.html#instance-member-value">value</a></span>): <span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span>
         </p>
       </div>
@@ -155,6 +184,81 @@
       <div>
         <p>
            <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-addVerticies">addVerticies</a></span></span><span data-ice="signature">(array: <span>values</span>): <span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-getEdgeByValues">getEdgeByValues</a></span></span><span data-ice="signature">(start: <span>startValue</span>, end: <span>endValue</span>): <span><a href="class/src/graph/Edge.js~Edge.html">Edge</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-getEdges">getEdges</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-getVertexByValue">getVertexByValue</a></span></span><span data-ice="signature">(value: <span><a href="class/src/graph/Vertex.js~Vertex.html#instance-member-value">value</a></span>): <span><a href="class/src/graph/Vertex.js~Vertex.html">Vertex</a></span></span>
         </p>
       </div>
       <div>
@@ -229,6 +333,31 @@
     <td>
       <div>
         <p>
+           <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-hasEdge">hasEdge</a></span></span><span data-ice="signature">(start: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span>, end: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
            <span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html#instance-method-hasVertexWithValue">hasVertexWithValue</a></span></span><span data-ice="signature">(value: <span><a href="class/src/graph/Vertex.js~Vertex.html#instance-member-value">value</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
         </p>
       </div>
@@ -264,7 +393,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber8">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber13">source</a></span></span>
     </span>
   </h3>
 
@@ -298,6 +427,81 @@
 <div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
 
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-addEdge">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">addEdge</span><span data-ice="signature">(Vertex: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span>, Vertex: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span>): <span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber90">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">Vertex</td>
+      <td data-ice="type"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>(or value of Vertex) in graph to start</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">Vertex</td>
+      <td data-ice="type"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>(or value of Vertex) in graph to end</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>current instance of graph.</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-addVertex">
     <span class="access" data-ice="access">public</span>
     
@@ -308,7 +512,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber41">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber47">source</a></span></span>
     </span>
   </h3>
 
@@ -376,7 +580,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber55">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber61">source</a></span></span>
     </span>
   </h3>
 
@@ -434,6 +638,199 @@
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-getEdgeByValues">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">getEdgeByValues</span><span data-ice="signature">(start: <span>startValue</span>, end: <span>endValue</span>): <span><a href="class/src/graph/Edge.js~Edge.html">Edge</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber121">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">start</td>
+      <td data-ice="type"><span>startValue</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>value of edge to locate</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">end</td>
+      <td data-ice="type"><span>endValue</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>value of edge to locate</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="class/src/graph/Edge.js~Edge.html">Edge</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>returns Edge instance in Graph if exists, otherwise returns undefined</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-getEdges">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">getEdges</span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber112">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>array of Edge instances present in Graph.</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-getVertexByValue">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">getVertexByValue</span><span data-ice="signature">(value: <span><a href="class/src/graph/Vertex.js~Vertex.html#instance-member-value">value</a></span>): <span><a href="class/src/graph/Vertex.js~Vertex.html">Vertex</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber72">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">value</td>
+      <td data-ice="type"><span><a href="class/src/graph/Vertex.js~Vertex.html#instance-member-value">value</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="class/src/graph/Vertex.js~Vertex.html">Vertex</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>instance of Vertex in graph with value, else undefined</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-getVertexValues">
     <span class="access" data-ice="access">public</span>
     
@@ -444,7 +841,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber31">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber37">source</a></span></span>
     </span>
   </h3>
 
@@ -495,7 +892,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber21">source</a></span></span>
     </span>
   </h3>
 
@@ -536,6 +933,81 @@
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-hasEdge">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">hasEdge</span><span data-ice="signature">(start: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span>, end: <span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber139">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">start</td>
+      <td data-ice="type"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>value of edge to locate</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">end</td>
+      <td data-ice="type"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>value of edge to locate</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>true if any edge has these start and end values else false</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-hasVertexWithValue">
     <span class="access" data-ice="access">public</span>
     
@@ -546,7 +1018,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber23">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Graph.js.html#lineNumber29">source</a></span></span>
     </span>
   </h3>
 

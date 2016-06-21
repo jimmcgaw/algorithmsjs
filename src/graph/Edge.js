@@ -1,4 +1,3 @@
-
 /**
  * Edge: represents an edge that can be added to a Graph instance.
  */
