@@ -1,4 +1,5 @@
 import Vertex from './Vertex';
+import DuplicateVertexError from './DuplicateVertexError';
 
 /**
  * Graph: represents a graph data structure.
@@ -38,8 +39,12 @@ class Graph {
    * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
-    var vertex = new vertex_class(value);
-    this._vertices.push(vertex);
+    if (this.hasVertexWithValue(value)){
+      throw new DuplicateVertexError("Cannot add duplicate value " + value.toString() + " to graph.");
+    } else {
+      var vertex = new vertex_class(value);
+      this._vertices.push(vertex);
+    }
     return this;
   }
 

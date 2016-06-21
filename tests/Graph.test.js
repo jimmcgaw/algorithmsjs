@@ -2,6 +2,7 @@ import { expect } from 'chai';
 
 import Graph from '../src/Graph';
 import Vertex from '../src/Vertex';
+import DuplicateVertexError from '../src/DuplicateVertexError';
 
 describe('Graph', () => {
   let graph;
@@ -32,6 +33,14 @@ describe('Graph', () => {
       expect(graph.getVertices().length).to.equal(1);
       graph.addVertex('B');
       expect(graph.getVertices().length).to.equal(2);
+    });
+
+    it('prevents adding duplicates', function () {
+      graph.addVertex('A');
+      expect(() => {
+        graph.addVertex('A');
+      }).to.throw(/Cannot add duplicate value A to graph/);
+
     });
   });
 
