@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jimmcgaw/algorithmsjs.svg?branch=master)](https://travis-ci.org/jimmcgaw/algorithmsjs)
+
 # Algorithms and Data Structures in JavaScript
 
 In my continuing effort to become more proficient with both TDD and algorithms, I'm setting up this
@@ -21,6 +23,6 @@ using esdocs for this. To generate the docs:
 
 To view the documentation:
 
-``` $ npm run docs ``` 
+``` $ npm run docs ```
 
 (Or you can just open docs/index.html in your favorite browser.)
