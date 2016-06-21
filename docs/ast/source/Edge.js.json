@@ -2,21 +2,21 @@
   "type": "Program",
   "body": [
     {
-      "type": "ClassDeclaration",
+      "type": "Identifier",
       "id": {
         "type": "Identifier",
         "name": "Edge",
         "range": [
-          6,
-          10
+          82,
+          86
         ],
         "loc": {
           "start": {
-            "line": 1,
+            "line": 5,
             "column": 6
           },
           "end": {
-            "line": 1,
+            "line": 5,
             "column": 10
           }
         }
@@ -31,16 +31,16 @@
               "type": "Identifier",
               "name": "constructor",
               "range": [
-                15,
-                26
+                91,
+                102
               ],
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 6,
                   "column": 2
                 },
                 "end": {
-                  "line": 2,
+                  "line": 6,
                   "column": 13
                 }
               }
@@ -53,16 +53,16 @@
                   "type": "Identifier",
                   "name": "startVertex",
                   "range": [
-                    27,
-                    38
+                    103,
+                    114
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 6,
                       "column": 14
                     },
                     "end": {
-                      "line": 2,
+                      "line": 6,
                       "column": 25
                     }
                   }
@@ -71,16 +71,16 @@
                   "type": "Identifier",
                   "name": "endVertex",
                   "range": [
-                    40,
-                    49
+                    116,
+                    125
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 6,
                       "column": 27
                     },
                     "end": {
-                      "line": 2,
+                      "line": 6,
                       "column": 36
                     }
                   }
@@ -100,16 +100,16 @@
                         "object": {
                           "type": "ThisExpression",
                           "range": [
-                            56,
-                            60
+                            132,
+                            136
                           ],
                           "loc": {
                             "start": {
-                              "line": 3,
+                              "line": 7,
                               "column": 4
                             },
                             "end": {
-                              "line": 3,
+                              "line": 7,
                               "column": 8
                             }
                           }
@@ -118,31 +118,31 @@
                           "type": "Identifier",
                           "name": "startVertex",
                           "range": [
-                            61,
-                            72
+                            137,
+                            148
                           ],
                           "loc": {
                             "start": {
-                              "line": 3,
+                              "line": 7,
                               "column": 9
                             },
                             "end": {
-                              "line": 3,
+                              "line": 7,
                               "column": 20
                             }
                           }
                         },
                         "range": [
-                          56,
-                          72
+                          132,
+                          148
                         ],
                         "loc": {
                           "start": {
-                            "line": 3,
+                            "line": 7,
                             "column": 4
                           },
                           "end": {
-                            "line": 3,
+                            "line": 7,
                             "column": 20
                           }
                         }
@@ -151,46 +151,46 @@
                         "type": "Identifier",
                         "name": "startVertex",
                         "range": [
-                          75,
-                          86
+                          151,
+                          162
                         ],
                         "loc": {
                           "start": {
-                            "line": 3,
+                            "line": 7,
                             "column": 23
                           },
                           "end": {
-                            "line": 3,
+                            "line": 7,
                             "column": 34
                           }
                         }
                       },
                       "range": [
-                        56,
-                        86
+                        132,
+                        162
                       ],
                       "loc": {
                         "start": {
-                          "line": 3,
+                          "line": 7,
                           "column": 4
                         },
                         "end": {
-                          "line": 3,
+                          "line": 7,
                           "column": 34
                         }
                       }
                     },
                     "range": [
-                      56,
-                      87
+                      132,
+                      163
                     ],
                     "loc": {
                       "start": {
-                        "line": 3,
+                        "line": 7,
                         "column": 4
                       },
                       "end": {
-                        "line": 3,
+                        "line": 7,
                         "column": 35
                       }
                     }
@@ -206,16 +206,16 @@
                         "object": {
                           "type": "ThisExpression",
                           "range": [
-                            92,
-                            96
+                            168,
+                            172
                           ],
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 8,
                               "column": 4
                             },
                             "end": {
-                              "line": 4,
+                              "line": 8,
                               "column": 8
                             }
                           }
@@ -224,31 +224,31 @@
                           "type": "Identifier",
                           "name": "endVertex",
                           "range": [
-                            97,
-                            106
+                            173,
+                            182
                           ],
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 8,
                               "column": 9
                             },
                             "end": {
-                              "line": 4,
+                              "line": 8,
                               "column": 18
                             }
                           }
                         },
                         "range": [
-                          92,
-                          106
+                          168,
+                          182
                         ],
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 8,
                             "column": 4
                           },
                           "end": {
-                            "line": 4,
+                            "line": 8,
                             "column": 18
                           }
                         }
@@ -257,62 +257,62 @@
                         "type": "Identifier",
                         "name": "endVertex",
                         "range": [
-                          109,
-                          118
+                          185,
+                          194
                         ],
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 8,
                             "column": 21
                           },
                           "end": {
-                            "line": 4,
+                            "line": 8,
                             "column": 30
                           }
                         }
                       },
                       "range": [
-                        92,
-                        118
+                        168,
+                        194
                       ],
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 8,
                           "column": 4
                         },
                         "end": {
-                          "line": 4,
+                          "line": 8,
                           "column": 30
                         }
                       }
                     },
                     "range": [
-                      92,
-                      119
+                      168,
+                      195
                     ],
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 8,
                         "column": 4
                       },
                       "end": {
-                        "line": 4,
+                        "line": 8,
                         "column": 31
                       }
                     }
                   }
                 ],
                 "range": [
-                  50,
-                  123
+                  126,
+                  199
                 ],
                 "loc": {
                   "start": {
-                    "line": 2,
+                    "line": 6,
                     "column": 37
                   },
                   "end": {
-                    "line": 5,
+                    "line": 9,
                     "column": 3
                   }
                 }
@@ -320,16 +320,16 @@
               "generator": false,
               "expression": false,
               "range": [
-                26,
-                123
+                102,
+                199
               ],
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 6,
                   "column": 13
                 },
                 "end": {
-                  "line": 5,
+                  "line": 9,
                   "column": 3
                 }
               }
@@ -337,16 +337,16 @@
             "kind": "constructor",
             "computed": false,
             "range": [
-              15,
-              123
+              91,
+              199
             ],
             "loc": {
               "start": {
-                "line": 2,
+                "line": 6,
                 "column": 2
               },
               "end": {
-                "line": 5,
+                "line": 9,
                 "column": 3
               }
             },
@@ -354,50 +354,532 @@
           }
         ],
         "range": [
-          11,
-          129
+          87,
+          203
         ],
         "loc": {
           "start": {
-            "line": 1,
+            "line": 5,
             "column": 11
           },
           "end": {
-            "line": 8,
+            "line": 12,
             "column": 1
           }
         }
       },
       "range": [
-        0,
-        129
+        76,
+        203
       ],
       "loc": {
         "start": {
-          "line": 1,
+          "line": 5,
           "column": 0
         },
         "end": {
-          "line": 8,
+          "line": 12,
           "column": 1
         }
-      }
+      },
+      "leadingComments": [],
+      "name": "_",
+      "trailingComments": []
+    },
+    {
+      "type": "Identifier",
+      "declaration": {
+        "type": "Identifier",
+        "name": "Edge",
+        "range": [
+          220,
+          224
+        ],
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 15
+          },
+          "end": {
+            "line": 14,
+            "column": 19
+          }
+        }
+      },
+      "range": [
+        205,
+        225
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 20
+        }
+      },
+      "name": "_",
+      "leadingComments": [],
+      "trailingComments": []
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Edge",
+          "range": [
+            82,
+            86
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 6
+            },
+            "end": {
+              "line": 5,
+              "column": 10
+            }
+          }
+        },
+        "superClass": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "constructor",
+                "range": [
+                  91,
+                  102
+                ],
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 13
+                  }
+                }
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "startVertex",
+                    "range": [
+                      103,
+                      114
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25
+                      }
+                    }
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "endVertex",
+                    "range": [
+                      116,
+                      125
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 36
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "ThisExpression",
+                            "range": [
+                              132,
+                              136
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 7,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 7,
+                                "column": 8
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "startVertex",
+                            "range": [
+                              137,
+                              148
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 7,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 7,
+                                "column": 20
+                              }
+                            }
+                          },
+                          "range": [
+                            132,
+                            148
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 20
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "startVertex",
+                          "range": [
+                            151,
+                            162
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 23
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 34
+                            }
+                          }
+                        },
+                        "range": [
+                          132,
+                          162
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 34
+                          }
+                        }
+                      },
+                      "range": [
+                        132,
+                        163
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 7,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 7,
+                          "column": 35
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "ThisExpression",
+                            "range": [
+                              168,
+                              172
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 8,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 8,
+                                "column": 8
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "endVertex",
+                            "range": [
+                              173,
+                              182
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 8,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 8,
+                                "column": 18
+                              }
+                            }
+                          },
+                          "range": [
+                            168,
+                            182
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 8,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 8,
+                              "column": 18
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "endVertex",
+                          "range": [
+                            185,
+                            194
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 8,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 8,
+                              "column": 30
+                            }
+                          }
+                        },
+                        "range": [
+                          168,
+                          194
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 8,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 8,
+                            "column": 30
+                          }
+                        }
+                      },
+                      "range": [
+                        168,
+                        195
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 8,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 8,
+                          "column": 31
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    126,
+                    199
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 37
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 3
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": false,
+                "range": [
+                  102,
+                  199
+                ],
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 3
+                  }
+                }
+              },
+              "kind": "constructor",
+              "computed": false,
+              "range": [
+                91,
+                199
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 2
+                },
+                "end": {
+                  "line": 9,
+                  "column": 3
+                }
+              },
+              "static": false
+            }
+          ],
+          "range": [
+            87,
+            203
+          ],
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 11
+            },
+            "end": {
+              "line": 12,
+              "column": 1
+            }
+          }
+        },
+        "range": [
+          76,
+          203
+        ],
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 12,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Edge: represents an edge that can be added to a Graph instance.\n ",
+            "range": [
+              1,
+              75
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "__esdoc__pseudo_export": false,
+        "trailingComments": []
+      },
+      "range": [
+        205,
+        225
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 20
+        }
+      },
+      "leadingComments": null
     }
   ],
   "sourceType": "module",
   "range": [
-    0,
-    129
+    76,
+    225
   ],
   "loc": {
     "start": {
-      "line": 1,
+      "line": 5,
       "column": 0
     },
     "end": {
-      "line": 8,
-      "column": 1
+      "line": 14,
+      "column": 20
     }
   },
-  "comments": []
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Edge: represents an edge that can be added to a Graph instance.\n ",
+      "range": [
+        1,
+        75
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    }
+  ]
 }

@@ -33,6 +33,7 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Edge.js~Edge.html">Edge</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Graph.js~Graph.html">Graph</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Vertex.js~Vertex.html">Vertex</a></span></span></li>
 </ul>
@@ -40,14 +41,20 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/Edge.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">class Edge {
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Edge: represents an edge that can be added to a Graph instance.
+ */
+class Edge {
   constructor(startVertex, endVertex){
     this.startVertex = startVertex;
     this.endVertex = endVertex;
   }
 
-  
+
 }
+
+export default Edge;
 </code></pre>
 
 </div>

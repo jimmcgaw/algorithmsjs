@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "algorithmsjs/src/edge.js~edge",
+    "class/src/Edge.js~Edge.html",
+    "<span>Edge</span> <span class=\"search-result-import-path\">algorithmsjs/src/Edge.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/graph.js~graph",
     "class/src/Graph.js~Graph.html",
     "<span>Graph</span> <span class=\"search-result-import-path\">algorithmsjs/src/Graph.js</span>",
@@ -376,6 +382,24 @@ window.esdocSearchIndex = [
     "file/src/Edge.js.html",
     "src/Edge.js",
     "file"
+  ],
+  [
+    "src/edge.js~edge#constructor",
+    "class/src/Edge.js~Edge.html#instance-constructor-constructor",
+    "src/Edge.js~Edge#constructor",
+    "method"
+  ],
+  [
+    "src/edge.js~edge#endvertex",
+    "class/src/Edge.js~Edge.html#instance-member-endVertex",
+    "src/Edge.js~Edge#endVertex",
+    "member"
+  ],
+  [
+    "src/edge.js~edge#startvertex",
+    "class/src/Edge.js~Edge.html#instance-member-startVertex",
+    "src/Edge.js~Edge#startVertex",
+    "member"
   ],
   [
     "src/graph.js",

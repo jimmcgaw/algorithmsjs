@@ -39,7 +39,7 @@ describe('Graph', () => {
       graph.addVertex('A');
       expect(() => {
         graph.addVertex('A');
-      }).to.throw(/Cannot add duplicate value A to graph/);
+      }).to.throw(/Cannot add duplicate value 'A' to graph/);
 
     });
   });

@@ -40,7 +40,7 @@ class Graph {
    */
   addVertex(value, vertex_class=Vertex){
     if (this.hasVertexWithValue(value)){
-      throw new DuplicateVertexError("Cannot add duplicate value " + value.toString() + " to graph.");
+      throw new DuplicateVertexError("Cannot add duplicate value '" + value.toString() + "' to graph.");
     } else {
       var vertex = new vertex_class(value);
       this._vertices.push(vertex);

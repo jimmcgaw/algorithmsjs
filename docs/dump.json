@@ -100,8 +100,8 @@
     "longname": "src/Edge.js",
     "access": null,
     "description": null,
-    "lineNumber": 1,
-    "content": "class Edge {\n  constructor(startVertex, endVertex){\n    this.startVertex = startVertex;\n    this.endVertex = endVertex;\n  }\n\n  \n}\n"
+    "lineNumber": 5,
+    "content": "\n/**\n * Edge: represents an edge that can be added to a Graph instance.\n */\nclass Edge {\n  constructor(startVertex, endVertex){\n    this.startVertex = startVertex;\n    this.endVertex = endVertex;\n  }\n\n\n}\n\nexport default Edge;\n"
   },
   {
     "__docId__": 6,
@@ -112,12 +112,11 @@
     "memberof": "src/Edge.js",
     "longname": "src/Edge.js~Edge",
     "access": null,
-    "export": false,
+    "export": true,
     "importPath": "algorithmsjs/src/Edge.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
+    "importStyle": "Edge",
+    "description": "Edge: represents an edge that can be added to a Graph instance.",
+    "lineNumber": 5,
     "interface": false
   },
   {
@@ -130,7 +129,7 @@
     "longname": "src/Edge.js~Edge#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 6,
     "undocument": true,
     "params": [
       {
@@ -158,7 +157,7 @@
     "longname": "src/Edge.js~Edge#startVertex",
     "access": null,
     "description": null,
-    "lineNumber": 3,
+    "lineNumber": 7,
     "undocument": true,
     "type": {
       "types": [
@@ -176,7 +175,7 @@
     "longname": "src/Edge.js~Edge#endVertex",
     "access": null,
     "description": null,
-    "lineNumber": 4,
+    "lineNumber": 8,
     "undocument": true,
     "type": {
       "types": [
@@ -195,7 +194,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import Vertex from './Vertex';\nimport DuplicateVertexError from './DuplicateVertexError';\n\n/**\n * Graph: represents a graph data structure.\n */\nclass Graph {\n  constructor(){\n    this._vertices = [];\n  }\n\n  /**\n   * @return {Array} array of all Vertex instances in this graph.\n   */\n  getVertices(){\n    return this._vertices;\n  }\n\n  /**\n   * @param {value} value to find in the graph.\n   * @return {Boolean} true if any vertex has this value else false\n   */\n  hasVertexWithValue(value){\n    var vertexValues = this.getVertexValues();\n    return !!~vertexValues.indexOf(value);\n  }\n\n  /**\n   * @return {Array} array of values in all graph vertices.\n   */\n  getVertexValues(){\n    return this._vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   */\n  addVertex(value, vertex_class=Vertex){\n    if (this.hasVertexWithValue(value)){\n      throw new DuplicateVertexError(\"Cannot add duplicate value \" + value.toString() + \" to graph.\");\n    } else {\n      var vertex = new vertex_class(value);\n      this._vertices.push(vertex);\n    }\n    return this;\n  }\n\n  /**\n   * @param {values} array of values to add to the graph\n   * @return {Graph} current instance of graph.\n   */\n  addVerticies(values){\n    values.forEach((value) => {\n      this.addVertex(value);\n    });\n  }\n\n\n\n}\n\nexport default Graph;\n"
+    "content": "import Vertex from './Vertex';\nimport DuplicateVertexError from './DuplicateVertexError';\n\n/**\n * Graph: represents a graph data structure.\n */\nclass Graph {\n  constructor(){\n    this._vertices = [];\n  }\n\n  /**\n   * @return {Array} array of all Vertex instances in this graph.\n   */\n  getVertices(){\n    return this._vertices;\n  }\n\n  /**\n   * @param {value} value to find in the graph.\n   * @return {Boolean} true if any vertex has this value else false\n   */\n  hasVertexWithValue(value){\n    var vertexValues = this.getVertexValues();\n    return !!~vertexValues.indexOf(value);\n  }\n\n  /**\n   * @return {Array} array of values in all graph vertices.\n   */\n  getVertexValues(){\n    return this._vertices.map((vertex) => {\n      return vertex.getValue();\n    });\n  }\n\n  /**\n   * @param {value} value to set on the vertex\n   * @return {Graph} current instance of graph.\n   */\n  addVertex(value, vertex_class=Vertex){\n    if (this.hasVertexWithValue(value)){\n      throw new DuplicateVertexError(\"Cannot add duplicate value '\" + value.toString() + \"' to graph.\");\n    } else {\n      var vertex = new vertex_class(value);\n      this._vertices.push(vertex);\n    }\n    return this;\n  }\n\n  /**\n   * @param {values} array of values to add to the graph\n   * @return {Graph} current instance of graph.\n   */\n  addVerticies(values){\n    values.forEach((value) => {\n      this.addVertex(value);\n    });\n  }\n\n\n\n}\n\nexport default Graph;\n"
   },
   {
     "__docId__": 11,
@@ -399,8 +398,8 @@
     "longname": "src/Vertex.js",
     "access": null,
     "description": null,
-    "lineNumber": 1,
-    "content": "class Vertex {\n  constructor(value){\n    this.value = value;\n  }\n\n  getValue(){\n    return this.value;\n  }\n}\n\nexport default Vertex;\n"
+    "lineNumber": 4,
+    "content": "/**\n * Vertex: represents a vertex that can be added to a Graph instance.\n */\nclass Vertex {\n  constructor(value){\n    this.value = value;\n  }\n\n  getValue(){\n    return this.value;\n  }\n}\n\nexport default Vertex;\n"
   },
   {
     "__docId__": 20,
@@ -414,9 +413,8 @@
     "export": true,
     "importPath": "algorithmsjs/src/Vertex.js",
     "importStyle": "Vertex",
-    "description": null,
-    "lineNumber": 1,
-    "undocument": true,
+    "description": "Vertex: represents a vertex that can be added to a Graph instance.",
+    "lineNumber": 4,
     "interface": false
   },
   {
@@ -429,7 +427,7 @@
     "longname": "src/Vertex.js~Vertex#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 5,
     "undocument": true,
     "params": [
       {
@@ -451,7 +449,7 @@
     "longname": "src/Vertex.js~Vertex#value",
     "access": null,
     "description": null,
-    "lineNumber": 3,
+    "lineNumber": 6,
     "undocument": true,
     "type": {
       "types": [
@@ -469,7 +467,7 @@
     "longname": "src/Vertex.js~Vertex#getValue",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 9,
     "undocument": true,
     "params": [],
     "return": {

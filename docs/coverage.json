@@ -1,7 +1,7 @@
 {
-  "coverage": "40%",
-  "expectCount": 15,
-  "actualCount": 6,
+  "coverage": "42.1%",
+  "expectCount": 19,
+  "actualCount": 8,
   "files": {
     "src/DuplicateVertexError.js": {
       "expectCount": 4,
@@ -13,6 +13,15 @@
         6
       ]
     },
+    "src/Edge.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        6,
+        8,
+        7
+      ]
+    },
     "src/Graph.js": {
       "expectCount": 7,
       "actualCount": 6,
@@ -22,12 +31,11 @@
     },
     "src/Vertex.js": {
       "expectCount": 4,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        1,
-        2,
-        6,
-        3
+        5,
+        9,
+        6
       ]
     }
   }

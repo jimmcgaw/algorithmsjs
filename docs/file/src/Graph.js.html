@@ -33,6 +33,7 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Edge.js~Edge.html">Edge</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Graph.js~Graph.html">Graph</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Vertex.js~Vertex.html">Vertex</a></span></span></li>
 </ul>
@@ -82,7 +83,7 @@ class Graph {
    */
   addVertex(value, vertex_class=Vertex){
     if (this.hasVertexWithValue(value)){
-      throw new DuplicateVertexError(&quot;Cannot add duplicate value &quot; + value.toString() + &quot; to graph.&quot;);
+      throw new DuplicateVertexError(&quot;Cannot add duplicate value &apos;&quot; + value.toString() + &quot;&apos; to graph.&quot;);
     } else {
       var vertex = new vertex_class(value);
       this._vertices.push(vertex);
