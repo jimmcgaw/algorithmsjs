@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "algorithmsjs/src/graph/duplicateedgeerror.js~duplicateedgeerror",
+    "class/src/graph/DuplicateEdgeError.js~DuplicateEdgeError.html",
+    "<span>DuplicateEdgeError</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/DuplicateEdgeError.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/graph/duplicatevertexerror.js~duplicatevertexerror",
     "class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html",
     "<span>DuplicateVertexError</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/DuplicateVertexError.js</span>",
@@ -352,6 +358,30 @@ window.esdocSearchIndex = [
     "external/index.html",
     "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "external"
+  ],
+  [
+    "src/graph/duplicateedgeerror.js",
+    "file/src/graph/DuplicateEdgeError.js.html",
+    "src/graph/DuplicateEdgeError.js",
+    "file"
+  ],
+  [
+    "src/graph/duplicateedgeerror.js~duplicateedgeerror#constructor",
+    "class/src/graph/DuplicateEdgeError.js~DuplicateEdgeError.html#instance-constructor-constructor",
+    "src/graph/DuplicateEdgeError.js~DuplicateEdgeError#constructor",
+    "method"
+  ],
+  [
+    "src/graph/duplicateedgeerror.js~duplicateedgeerror#message",
+    "class/src/graph/DuplicateEdgeError.js~DuplicateEdgeError.html#instance-member-message",
+    "src/graph/DuplicateEdgeError.js~DuplicateEdgeError#message",
+    "member"
+  ],
+  [
+    "src/graph/duplicateedgeerror.js~duplicateedgeerror#name",
+    "class/src/graph/DuplicateEdgeError.js~DuplicateEdgeError.html#instance-member-name",
+    "src/graph/DuplicateEdgeError.js~DuplicateEdgeError#name",
+    "member"
   ],
   [
     "src/graph/duplicatevertexerror.js",

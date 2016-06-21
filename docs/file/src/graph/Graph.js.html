@@ -32,7 +32,8 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">graph</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">graph</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/DuplicateEdgeError.js~DuplicateEdgeError.html">DuplicateEdgeError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Edge.js~Edge.html">Edge</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Vertex.js~Vertex.html">Vertex</a></span></span></li>
@@ -44,6 +45,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import Edge from &apos;./Edge&apos;;
 import Vertex from &apos;./Vertex&apos;;
 import DuplicateVertexError from &apos;./DuplicateVertexError&apos;;
+import DuplicateEdgeError from &apos;./DuplicateEdgeError&apos;;
 
 /**
  * Graph: represents a undirected graph data structure.
@@ -85,6 +87,7 @@ class Graph {
 
   /**
    * @param {value} value to set on the vertex
+   * @throws {DuplicateVertexError} when adding vertex whose value exists in graph.
    * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
@@ -128,6 +131,7 @@ class Graph {
   /**
    * @param {startVertex} Vertex (or value of Vertex) in graph to start
    * @param {endVertex} Vertex (or value of Vertex) in graph to end
+   * @throws {DuplicateEdgeError} when adding edge whose value exists in graph.
    * @return {Graph} current instance of graph.
    */
    addEdge(startVertex, endVertex){
@@ -137,6 +141,10 @@ class Graph {
 
      if (!(endVertex instanceof Vertex)){
        endVertex = this.getVertexByValue(endVertex);
+     }
+
+     if (this.hasEdge(startVertex.value, endVertex.value)){
+       throw new DuplicateEdgeError(&quot;Cannot add duplicate edge between &apos;&quot; + startVertex.value + &quot;&apos; and &apos;&quot; + endVertex.value + &quot;&apos; to graph.&quot;);
      }
 
      var edge = new Edge(startVertex, endVertex);
@@ -159,7 +167,7 @@ class Graph {
    /**
     * @param {startValue} start value of edge to locate
     * @param {endValue} end value of edge to locate
-    * @return {Edge} returns Edge instance in Graph if exists, otherwise returns undefined 
+    * @return {Edge} returns Edge instance in Graph if exists, otherwise returns undefined
     */
    getEdgeByValues(startValue, endValue){
      let edges = this.getEdges();

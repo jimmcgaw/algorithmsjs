@@ -1,6 +1,7 @@
 import Edge from './Edge';
 import Vertex from './Vertex';
 import DuplicateVertexError from './DuplicateVertexError';
+import DuplicateEdgeError from './DuplicateEdgeError';
 
 /**
  * Graph: represents a undirected graph data structure.
@@ -42,6 +43,7 @@ class Graph {
 
   /**
    * @param {value} value to set on the vertex
+   * @throws {DuplicateVertexError} when adding vertex whose value exists in graph.
    * @return {Graph} current instance of graph.
    */
   addVertex(value, vertex_class=Vertex){
@@ -85,6 +87,7 @@ class Graph {
   /**
    * @param {startVertex} Vertex (or value of Vertex) in graph to start
    * @param {endVertex} Vertex (or value of Vertex) in graph to end
+   * @throws {DuplicateEdgeError} when adding edge whose value exists in graph.
    * @return {Graph} current instance of graph.
    */
    addEdge(startVertex, endVertex){
@@ -94,6 +97,10 @@ class Graph {
 
      if (!(endVertex instanceof Vertex)){
        endVertex = this.getVertexByValue(endVertex);
+     }
+
+     if (this.hasEdge(startVertex.value, endVertex.value)){
+       throw new DuplicateEdgeError("Cannot add duplicate edge between '" + startVertex.value + "' and '" + endVertex.value + "' to graph.");
      }
 
      var edge = new Edge(startVertex, endVertex);
@@ -116,7 +123,7 @@ class Graph {
    /**
     * @param {startValue} start value of edge to locate
     * @param {endValue} end value of edge to locate
-    * @return {Edge} returns Edge instance in Graph if exists, otherwise returns undefined 
+    * @return {Edge} returns Edge instance in Graph if exists, otherwise returns undefined
     */
    getEdgeByValues(startValue, endValue){
      let edges = this.getEdges();

@@ -93,6 +93,21 @@ describe('Graph', () => {
 
       expect(edges.length).to.equal(2);
     });
+
+    it('throws an Error if we are trying to add a duplicate edge', function () {
+      graph.addVertex('A');
+      graph.addVertex('B');
+
+      graph.addEdge('A', 'B');
+
+      expect(() => {
+        graph.addEdge('A', 'B');
+      }).to.throw(/Cannot add duplicate edge between/);
+      // added edges are symmetrical
+      expect(() => {
+        graph.addEdge('B', 'A');
+      }).to.throw(/Cannot add duplicate edge between/);
+    });
   });
 
   describe('#getEdgeByValues', function () {
