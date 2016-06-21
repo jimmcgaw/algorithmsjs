@@ -21,6 +21,6 @@ using esdocs for this. To generate the docs:
 
 To view the documentation:
 
-``` $ npm run docs ```
+``` $ npm run docs ``` 
 
 (Or you can just open docs/index.html in your favorite browser.)
