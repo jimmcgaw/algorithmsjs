@@ -1,26 +1,26 @@
 window.esdocSearchIndex = [
   [
-    "algorithmsjs/src/duplicatevertexerror.js~duplicatevertexerror",
-    "class/src/DuplicateVertexError.js~DuplicateVertexError.html",
-    "<span>DuplicateVertexError</span> <span class=\"search-result-import-path\">algorithmsjs/src/DuplicateVertexError.js</span>",
+    "algorithmsjs/src/graph/duplicatevertexerror.js~duplicatevertexerror",
+    "class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html",
+    "<span>DuplicateVertexError</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/DuplicateVertexError.js</span>",
     "class"
   ],
   [
-    "algorithmsjs/src/edge.js~edge",
-    "class/src/Edge.js~Edge.html",
-    "<span>Edge</span> <span class=\"search-result-import-path\">algorithmsjs/src/Edge.js</span>",
+    "algorithmsjs/src/graph/edge.js~edge",
+    "class/src/graph/Edge.js~Edge.html",
+    "<span>Edge</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/Edge.js</span>",
     "class"
   ],
   [
-    "algorithmsjs/src/graph.js~graph",
-    "class/src/Graph.js~Graph.html",
-    "<span>Graph</span> <span class=\"search-result-import-path\">algorithmsjs/src/Graph.js</span>",
+    "algorithmsjs/src/graph/graph.js~graph",
+    "class/src/graph/Graph.js~Graph.html",
+    "<span>Graph</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/Graph.js</span>",
     "class"
   ],
   [
-    "algorithmsjs/src/vertex.js~vertex",
-    "class/src/Vertex.js~Vertex.html",
-    "<span>Vertex</span> <span class=\"search-result-import-path\">algorithmsjs/src/Vertex.js</span>",
+    "algorithmsjs/src/graph/vertex.js~vertex",
+    "class/src/graph/Vertex.js~Vertex.html",
+    "<span>Vertex</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/Vertex.js</span>",
     "class"
   ],
   [
@@ -354,117 +354,117 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/duplicatevertexerror.js",
-    "file/src/DuplicateVertexError.js.html",
-    "src/DuplicateVertexError.js",
+    "src/graph/duplicatevertexerror.js",
+    "file/src/graph/DuplicateVertexError.js.html",
+    "src/graph/DuplicateVertexError.js",
     "file"
   ],
   [
-    "src/duplicatevertexerror.js~duplicatevertexerror#constructor",
-    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-constructor-constructor",
-    "src/DuplicateVertexError.js~DuplicateVertexError#constructor",
+    "src/graph/duplicatevertexerror.js~duplicatevertexerror#constructor",
+    "class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html#instance-constructor-constructor",
+    "src/graph/DuplicateVertexError.js~DuplicateVertexError#constructor",
     "method"
   ],
   [
-    "src/duplicatevertexerror.js~duplicatevertexerror#message",
-    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-message",
-    "src/DuplicateVertexError.js~DuplicateVertexError#message",
+    "src/graph/duplicatevertexerror.js~duplicatevertexerror#message",
+    "class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-message",
+    "src/graph/DuplicateVertexError.js~DuplicateVertexError#message",
     "member"
   ],
   [
-    "src/duplicatevertexerror.js~duplicatevertexerror#name",
-    "class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-name",
-    "src/DuplicateVertexError.js~DuplicateVertexError#name",
+    "src/graph/duplicatevertexerror.js~duplicatevertexerror#name",
+    "class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-name",
+    "src/graph/DuplicateVertexError.js~DuplicateVertexError#name",
     "member"
   ],
   [
-    "src/edge.js",
-    "file/src/Edge.js.html",
-    "src/Edge.js",
+    "src/graph/edge.js",
+    "file/src/graph/Edge.js.html",
+    "src/graph/Edge.js",
     "file"
   ],
   [
-    "src/edge.js~edge#constructor",
-    "class/src/Edge.js~Edge.html#instance-constructor-constructor",
-    "src/Edge.js~Edge#constructor",
+    "src/graph/edge.js~edge#constructor",
+    "class/src/graph/Edge.js~Edge.html#instance-constructor-constructor",
+    "src/graph/Edge.js~Edge#constructor",
     "method"
   ],
   [
-    "src/edge.js~edge#endvertex",
-    "class/src/Edge.js~Edge.html#instance-member-endVertex",
-    "src/Edge.js~Edge#endVertex",
+    "src/graph/edge.js~edge#endvertex",
+    "class/src/graph/Edge.js~Edge.html#instance-member-endVertex",
+    "src/graph/Edge.js~Edge#endVertex",
     "member"
   ],
   [
-    "src/edge.js~edge#startvertex",
-    "class/src/Edge.js~Edge.html#instance-member-startVertex",
-    "src/Edge.js~Edge#startVertex",
+    "src/graph/edge.js~edge#startvertex",
+    "class/src/graph/Edge.js~Edge.html#instance-member-startVertex",
+    "src/graph/Edge.js~Edge#startVertex",
     "member"
   ],
   [
-    "src/graph.js",
-    "file/src/Graph.js.html",
-    "src/Graph.js",
+    "src/graph/graph.js",
+    "file/src/graph/Graph.js.html",
+    "src/graph/Graph.js",
     "file"
   ],
   [
-    "src/graph.js~graph#addvertex",
-    "class/src/Graph.js~Graph.html#instance-method-addVertex",
-    "src/Graph.js~Graph#addVertex",
+    "src/graph/graph.js~graph#addvertex",
+    "class/src/graph/Graph.js~Graph.html#instance-method-addVertex",
+    "src/graph/Graph.js~Graph#addVertex",
     "method"
   ],
   [
-    "src/graph.js~graph#addverticies",
-    "class/src/Graph.js~Graph.html#instance-method-addVerticies",
-    "src/Graph.js~Graph#addVerticies",
+    "src/graph/graph.js~graph#addverticies",
+    "class/src/graph/Graph.js~Graph.html#instance-method-addVerticies",
+    "src/graph/Graph.js~Graph#addVerticies",
     "method"
   ],
   [
-    "src/graph.js~graph#constructor",
-    "class/src/Graph.js~Graph.html#instance-constructor-constructor",
-    "src/Graph.js~Graph#constructor",
+    "src/graph/graph.js~graph#constructor",
+    "class/src/graph/Graph.js~Graph.html#instance-constructor-constructor",
+    "src/graph/Graph.js~Graph#constructor",
     "method"
   ],
   [
-    "src/graph.js~graph#getvertexvalues",
-    "class/src/Graph.js~Graph.html#instance-method-getVertexValues",
-    "src/Graph.js~Graph#getVertexValues",
+    "src/graph/graph.js~graph#getvertexvalues",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getVertexValues",
+    "src/graph/Graph.js~Graph#getVertexValues",
     "method"
   ],
   [
-    "src/graph.js~graph#getvertices",
-    "class/src/Graph.js~Graph.html#instance-method-getVertices",
-    "src/Graph.js~Graph#getVertices",
+    "src/graph/graph.js~graph#getvertices",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getVertices",
+    "src/graph/Graph.js~Graph#getVertices",
     "method"
   ],
   [
-    "src/graph.js~graph#hasvertexwithvalue",
-    "class/src/Graph.js~Graph.html#instance-method-hasVertexWithValue",
-    "src/Graph.js~Graph#hasVertexWithValue",
+    "src/graph/graph.js~graph#hasvertexwithvalue",
+    "class/src/graph/Graph.js~Graph.html#instance-method-hasVertexWithValue",
+    "src/graph/Graph.js~Graph#hasVertexWithValue",
     "method"
   ],
   [
-    "src/vertex.js",
-    "file/src/Vertex.js.html",
-    "src/Vertex.js",
+    "src/graph/vertex.js",
+    "file/src/graph/Vertex.js.html",
+    "src/graph/Vertex.js",
     "file"
   ],
   [
-    "src/vertex.js~vertex#constructor",
-    "class/src/Vertex.js~Vertex.html#instance-constructor-constructor",
-    "src/Vertex.js~Vertex#constructor",
+    "src/graph/vertex.js~vertex#constructor",
+    "class/src/graph/Vertex.js~Vertex.html#instance-constructor-constructor",
+    "src/graph/Vertex.js~Vertex#constructor",
     "method"
   ],
   [
-    "src/vertex.js~vertex#getvalue",
-    "class/src/Vertex.js~Vertex.html#instance-method-getValue",
-    "src/Vertex.js~Vertex#getValue",
+    "src/graph/vertex.js~vertex#getvalue",
+    "class/src/graph/Vertex.js~Vertex.html#instance-method-getValue",
+    "src/graph/Vertex.js~Vertex#getValue",
     "method"
   ],
   [
-    "src/vertex.js~vertex#value",
-    "class/src/Vertex.js~Vertex.html#instance-member-value",
-    "src/Vertex.js~Vertex#value",
+    "src/graph/vertex.js~vertex#value",
+    "class/src/graph/Vertex.js~Vertex.html#instance-member-value",
+    "src/graph/Vertex.js~Vertex#value",
     "member"
   ]
 ]

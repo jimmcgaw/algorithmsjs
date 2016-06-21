@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">DuplicateVertexError | API Document</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">Edge | API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -32,32 +32,32 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Edge.js~Edge.html">Edge</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Graph.js~Graph.html">Graph</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Vertex.js~Vertex.html">Vertex</a></span></span></li>
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">graph</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/DuplicateVertexError.js~DuplicateVertexError.html">DuplicateVertexError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Edge.js~Edge.html">Edge</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Graph.js~Graph.html">Graph</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/graph/Vertex.js~Vertex.html">Vertex</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DuplicateVertexError from &apos;<span><a href="file/src/DuplicateVertexError.js.html#lineNumber4">algorithmsjs/src/DuplicateVertexError.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Edge from &apos;<span><a href="file/src/graph/Edge.js.html#lineNumber5">algorithmsjs/src/graph/Edge.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/DuplicateVertexError.js.html#lineNumber4">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/graph/Edge.js.html#lineNumber5">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">DuplicateVertexError</h1>
+  <h1 data-ice="name">Edge</h1>
 
   
 
   
   
-  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></span> &#x2192; DuplicateVertexError</div></div>
+  
   
   
   
@@ -67,7 +67,7 @@
 
   
   
-  <div class="description" data-ice="description"><p>DuplicateVertexError: error raised when adding duplicate Vertex value to Graph.</p>
+  <div class="description" data-ice="description"><p>Edge: represents an edge that can be added to a Graph instance.</p>
 </div>
 
   
@@ -96,7 +96,7 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-constructor-constructor">constructor</a></span></span><span data-ice="signature">(message: <span>*</span>)</span>
+           <span data-ice="name"><span><a href="class/src/graph/Edge.js~Edge.html#instance-constructor-constructor">constructor</a></span></span><span data-ice="signature">(startVertex: <span>*</span>, endVertex: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -128,7 +128,7 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-message">message</a></span></span><span data-ice="signature">: <span>*</span></span>
+           <span data-ice="name"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-endVertex">endVertex</a></span></span><span data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -153,7 +153,7 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/DuplicateVertexError.js~DuplicateVertexError.html#instance-member-name">name</a></span></span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+           <span data-ice="name"><span><a href="class/src/graph/Edge.js~Edge.html#instance-member-startVertex">startVertex</a></span></span><span data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -185,11 +185,11 @@
     
     
     
-    <span data-ice="name">constructor</span><span data-ice="signature">(message: <span>*</span>)</span>
+    <span data-ice="name">constructor</span><span data-ice="signature">(startVertex: <span>*</span>, endVertex: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/DuplicateVertexError.js.html#lineNumber5">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Edge.js.html#lineNumber6">source</a></span></span>
     </span>
   </h3>
 
@@ -209,7 +209,13 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">message</td>
+      <td data-ice="name" data-depth="0">startVertex</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">endVertex</td>
       <td data-ice="type"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -238,17 +244,17 @@
 <div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-message">
+  <h3 data-ice="anchor" id="instance-member-endVertex">
     <span class="access" data-ice="access">public</span>
     
     
     
     
-    <span data-ice="name">message</span><span data-ice="signature">: <span>*</span></span>
+    <span data-ice="name">endVertex</span><span data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/DuplicateVertexError.js.html#lineNumber8">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Edge.js.html#lineNumber8">source</a></span></span>
     </span>
   </h3>
 
@@ -278,17 +284,17 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-name">
+  <h3 data-ice="anchor" id="instance-member-startVertex">
     <span class="access" data-ice="access">public</span>
     
     
     
     
-    <span data-ice="name">name</span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    <span data-ice="name">startVertex</span><span data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/DuplicateVertexError.js.html#lineNumber9">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/graph/Edge.js.html#lineNumber7">source</a></span></span>
     </span>
   </h3>
 

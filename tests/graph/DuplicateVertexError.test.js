@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import DuplicateVertexError from '../src/DuplicateVertexError';
+import DuplicateVertexError from '../../src/graph/DuplicateVertexError';
 
 describe('DuplicateVertexError', function () {
   let error;

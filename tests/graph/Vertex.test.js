@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import Vertex from '../src/Vertex';
+import Vertex from '../../src/graph/Vertex';
 
 describe('Vertex', () => {
   let vertex, defaultValue = 'ABC';

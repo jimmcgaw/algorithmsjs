@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 
-import Graph from '../src/Graph';
-import Vertex from '../src/Vertex';
-import DuplicateVertexError from '../src/DuplicateVertexError';
+import Graph from '../../src/graph/Graph';
+import Vertex from '../../src/graph/Vertex';
+import DuplicateVertexError from '../../src/graph/DuplicateVertexError';
 
 describe('Graph', () => {
   let graph;

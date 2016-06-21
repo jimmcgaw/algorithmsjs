@@ -1,19 +1,18 @@
 {
-  "coverage": "42.1%",
+  "coverage": "47.36%",
   "expectCount": 19,
-  "actualCount": 8,
+  "actualCount": 9,
   "files": {
-    "src/DuplicateVertexError.js": {
+    "src/graph/DuplicateVertexError.js": {
       "expectCount": 4,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        1,
-        2,
         5,
-        6
+        8,
+        9
       ]
     },
-    "src/Edge.js": {
+    "src/graph/Edge.js": {
       "expectCount": 4,
       "actualCount": 1,
       "undocumentLines": [
@@ -22,14 +21,14 @@
         7
       ]
     },
-    "src/Graph.js": {
+    "src/graph/Graph.js": {
       "expectCount": 7,
       "actualCount": 6,
       "undocumentLines": [
         8
       ]
     },
-    "src/Vertex.js": {
+    "src/graph/Vertex.js": {
       "expectCount": 4,
       "actualCount": 1,
       "undocumentLines": [
