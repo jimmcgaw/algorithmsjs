@@ -122,7 +122,7 @@ describe('Graph', () => {
       let edge = graph.getEdgeByValues('A', 'B');
       expect(edge).to.be.an.instanceof(Edge);
     });
-  })
+  });
 
   describe('#hasEdge', function () {
     it('returns true if the edge queried has been added to graph', function () {
@@ -137,5 +137,30 @@ describe('Graph', () => {
       // undirected graph, so opposite relationship must also exist
       expect(graph.hasEdge('B', 'A')).to.equal(true);
     });
+  });
+
+  describe('#getAdjacencyMatrix', function () {
+    it('returns adjacency matrix for graph', function () {
+      var vertexValues = ['A', 'B'];
+      vertexValues.forEach((value) => {
+        graph.addVertex(value);
+      });
+
+      var matrix = graph.getAdjacencyMatrix();
+      expect(matrix.length).to.equal(vertexValues.length);
+      expect(matrix[0].length).to.equal(vertexValues.length);
+
+      graph.addEdge('A', 'B');
+      matrix = graph.getAdjacencyMatrix();
+      expect(matrix[0][0]).to.equal(0);
+      expect(matrix[0][1]).to.equal(1);
+      expect(matrix[1][0]).to.equal(1);
+      expect(matrix[1][1]).to.equal(0);
+
+      graph.addEdge('A', 'A');
+      matrix = graph.getAdjacencyMatrix();
+      expect(matrix[0][0]).to.equal(1);
+    });
   })
+
 });

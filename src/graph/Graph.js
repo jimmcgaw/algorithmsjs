@@ -147,6 +147,33 @@ class Graph {
      return !!this.getEdgeByValues(startVertex, endVertex);
    }
 
+   /**
+    * @return {Array} array of arrays; each entry represents adjacency for row;
+    *         each entry in each sub-array represents adjacency for column;
+    *         if A[i][j] = 1, there is an edge from i to j.
+    */
+   getAdjacencyMatrix(){
+     let matrix = [];
+     let vertices = this.getVertices();
+     // where N = number of vertices, initialize N X N zero matrix
+     vertices.forEach((vertex) => {
+      matrix.push(new Array(vertices.length).fill(0));
+     });
+
+     // if edge exists for A[i][j] (and A[j][i]) set cell to 1
+     let edges = this.getEdges();
+     let vertexValues = this.getVertexValues();
+     edges.forEach((edge) => {
+       let startValue = edge.startVertex.value;
+       let endValue = edge.endVertex.value;
+       let startIndex = vertexValues.indexOf(startValue);
+       let endIndex = vertexValues.indexOf(endValue);
+       matrix[startIndex][endIndex] = 1;
+       matrix[endIndex][startIndex] = 1;
+     });
+     return matrix;
+   }
+
 
 }
 
