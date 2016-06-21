@@ -191,7 +191,63 @@ class Graph {
      return !!this.getEdgeByValues(startVertex, endVertex);
    }
 
+   /**
+    * @return {Array} array of arrays; each entry represents adjacency for row;
+    *         each entry in each sub-array represents adjacency for column;
+    *         if A[i][j] = 1, there is an edge from i to j.
+    */
+   getAdjacencyMatrix(){
+     let matrix = [];
+     let vertices = this.getVertices();
+     // where N = number of vertices, initialize N X N zero matrix
+     vertices.forEach((vertex) =&gt; {
+      matrix.push(new Array(vertices.length).fill(0));
+     });
 
+     // if edge exists for A[i][j] (and A[j][i]) set cell to 1
+     let edges = this.getEdges();
+     let vertexValues = this.getVertexValues();
+     edges.forEach((edge) =&gt; {
+       let startValue = edge.startVertex.value;
+       let endValue = edge.endVertex.value;
+       let startIndex = vertexValues.indexOf(startValue);
+       let endIndex = vertexValues.indexOf(endValue);
+       matrix[startIndex][endIndex] = 1;
+       matrix[endIndex][startIndex] = 1;
+     });
+     return matrix;
+   }
+
+   /**
+    * @return {Array} given Vertex A, return all values from vertices connected to A by edges.
+    */
+   getEdgesByVertex(vertex){
+     if (!(vertex instanceof Vertex)){
+       vertex = this.getVertexByValue(vertex);
+     }
+
+     let edges = this.getEdges();
+     let matching = edges.filter((edge) =&gt; {
+       return edge.startVertex.value === vertex.value;
+     });
+
+     return matching.map( (edge) =&gt; {
+       return edge.endVertex.value;
+     });
+   }
+
+   /**
+    * @return {Object} each Object key represents a vertex in graph;
+    * value at each key is an array of vertex values found in edge destinations.
+    */
+    getAdjacencyList(){
+      var list = {};
+      let vertices = this.getVertices();
+      vertices.forEach((vertex) =&gt; {
+        list[vertex.value] = this.getEdgesByVertex(vertex);
+      });
+      return list;
+    }
 }
 
 export default Graph;

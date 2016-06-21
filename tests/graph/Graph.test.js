@@ -161,6 +161,38 @@ describe('Graph', () => {
       matrix = graph.getAdjacencyMatrix();
       expect(matrix[0][0]).to.equal(1);
     });
+  });
+
+  describe('#getEdgesByVertex', function () {
+    it('returns edges that start at provided vertex', function () {
+      var vertexValues = ['A', 'B'];
+      vertexValues.forEach((value) => {
+        graph.addVertex(value);
+      });
+      graph.addEdge('A', 'B');
+
+      var edgesFromVertex = graph.getEdgesByVertex('A');
+      expect(edgesFromVertex).to.include.members(['B']);
+    });
+  })
+
+  describe('#getAdjacencyList', function () {
+    it('returns an adjacency list for graph', function () {
+      var vertexValues = ['A', 'B'];
+      vertexValues.forEach((value) => {
+        graph.addVertex(value);
+      });
+
+      var list = graph.getAdjacencyList();
+      expect(list[vertexValues[0]].length).to.equal(0);
+      expect(list[vertexValues[1]].length).to.equal(0);
+
+      graph.addEdge('A', 'B');
+      graph.addEdge('A', 'A');
+      list = graph.getAdjacencyList();
+      expect(list[vertexValues[0]]).to.include.members(['A', 'B']);
+      expect(list[vertexValues[1]]).to.include.members(['A']);
+    });
   })
 
 });

@@ -174,7 +174,36 @@ class Graph {
      return matrix;
    }
 
+   /**
+    * @return {Array} given Vertex A, return all values from vertices connected to A by edges.
+    */
+   getEdgesByVertex(vertex){
+     if (!(vertex instanceof Vertex)){
+       vertex = this.getVertexByValue(vertex);
+     }
 
+     let edges = this.getEdges();
+     let matching = edges.filter((edge) => {
+       return edge.startVertex.value === vertex.value;
+     });
+
+     return matching.map( (edge) => {
+       return edge.endVertex.value;
+     });
+   }
+
+   /**
+    * @return {Object} each Object key represents a vertex in graph;
+    * value at each key is an array of vertex values found in edge destinations.
+    */
+    getAdjacencyList(){
+      var list = {};
+      let vertices = this.getVertices();
+      vertices.forEach((vertex) => {
+        list[vertex.value] = this.getEdgesByVertex(vertex);
+      });
+      return list;
+    }
 }
 
 export default Graph;

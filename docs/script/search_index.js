@@ -462,6 +462,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/graph/graph.js~graph#getadjacencylist",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getAdjacencyList",
+    "src/graph/Graph.js~Graph#getAdjacencyList",
+    "method"
+  ],
+  [
+    "src/graph/graph.js~graph#getadjacencymatrix",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getAdjacencyMatrix",
+    "src/graph/Graph.js~Graph#getAdjacencyMatrix",
+    "method"
+  ],
+  [
     "src/graph/graph.js~graph#getedgebyvalues",
     "class/src/graph/Graph.js~Graph.html#instance-method-getEdgeByValues",
     "src/graph/Graph.js~Graph#getEdgeByValues",
@@ -471,6 +483,12 @@ window.esdocSearchIndex = [
     "src/graph/graph.js~graph#getedges",
     "class/src/graph/Graph.js~Graph.html#instance-method-getEdges",
     "src/graph/Graph.js~Graph#getEdges",
+    "method"
+  ],
+  [
+    "src/graph/graph.js~graph#getedgesbyvertex",
+    "class/src/graph/Graph.js~Graph.html#instance-method-getEdgesByVertex",
+    "src/graph/Graph.js~Graph#getEdgesByVertex",
     "method"
   ],
   [
