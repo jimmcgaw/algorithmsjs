@@ -24,6 +24,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "algorithmsjs/src/stack/stack.js~stack",
+    "class/src/stack/Stack.js~Stack.html",
+    "<span>Stack</span> <span class=\"search-result-import-path\">algorithmsjs/src/stack/Stack.js</span>",
+    "class"
+  ],
+  [
+    "algorithmsjs/src/stack/stackemptyerror.js~stackemptyerror",
+    "class/src/stack/StackEmptyError.js~StackEmptyError.html",
+    "<span>StackEmptyError</span> <span class=\"search-result-import-path\">algorithmsjs/src/stack/StackEmptyError.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/graph/vertex.js~vertex",
     "class/src/graph/Vertex.js~Vertex.html",
     "<span>Vertex</span> <span class=\"search-result-import-path\">algorithmsjs/src/graph/Vertex.js</span>",
@@ -543,6 +555,78 @@ window.esdocSearchIndex = [
     "src/graph/vertex.js~vertex#value",
     "class/src/graph/Vertex.js~Vertex.html#instance-member-value",
     "src/graph/Vertex.js~Vertex#value",
+    "member"
+  ],
+  [
+    "src/stack/stack.js",
+    "file/src/stack/Stack.js.html",
+    "src/stack/Stack.js",
+    "file"
+  ],
+  [
+    "src/stack/stack.js~stack#clear",
+    "class/src/stack/Stack.js~Stack.html#instance-method-clear",
+    "src/stack/Stack.js~Stack#clear",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#constructor",
+    "class/src/stack/Stack.js~Stack.html#instance-constructor-constructor",
+    "src/stack/Stack.js~Stack#constructor",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#count",
+    "class/src/stack/Stack.js~Stack.html#instance-method-count",
+    "src/stack/Stack.js~Stack#count",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#isempty",
+    "class/src/stack/Stack.js~Stack.html#instance-method-isEmpty",
+    "src/stack/Stack.js~Stack#isEmpty",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#pop",
+    "class/src/stack/Stack.js~Stack.html#instance-method-pop",
+    "src/stack/Stack.js~Stack#pop",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#print",
+    "class/src/stack/Stack.js~Stack.html#instance-method-print",
+    "src/stack/Stack.js~Stack#print",
+    "method"
+  ],
+  [
+    "src/stack/stack.js~stack#push",
+    "class/src/stack/Stack.js~Stack.html#instance-method-push",
+    "src/stack/Stack.js~Stack#push",
+    "method"
+  ],
+  [
+    "src/stack/stackemptyerror.js",
+    "file/src/stack/StackEmptyError.js.html",
+    "src/stack/StackEmptyError.js",
+    "file"
+  ],
+  [
+    "src/stack/stackemptyerror.js~stackemptyerror#constructor",
+    "class/src/stack/StackEmptyError.js~StackEmptyError.html#instance-constructor-constructor",
+    "src/stack/StackEmptyError.js~StackEmptyError#constructor",
+    "method"
+  ],
+  [
+    "src/stack/stackemptyerror.js~stackemptyerror#message",
+    "class/src/stack/StackEmptyError.js~StackEmptyError.html#instance-member-message",
+    "src/stack/StackEmptyError.js~StackEmptyError#message",
+    "member"
+  ],
+  [
+    "src/stack/stackemptyerror.js~stackemptyerror#name",
+    "class/src/stack/StackEmptyError.js~StackEmptyError.html#instance-member-name",
+    "src/stack/StackEmptyError.js~StackEmptyError#name",
     "member"
   ]
 ]

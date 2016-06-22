@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/graph/DuplicateEdgeError.js | API Document</title>
+  <title data-ice="title">src/stack/StackEmptyError.js | API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -43,20 +43,16 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/graph/DuplicateEdgeError.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * DuplicateEdgeError: error raised when adding duplicate Vertex value to Graph.
- */
-class DuplicateEdgeError extends Error {
+<div class="content" data-ice="content"><h1 data-ice="title">src/stack/StackEmptyError.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">class StackEmptyError extends Error {
   constructor(message){
     super(message);
-
     this.message = message;
-    this.name = &quot;DuplicateEdgeError&quot;;
+    this.name = &quot;StackEmptyError&quot;;
   }
 }
 
-export default DuplicateEdgeError;
+export default StackEmptyError;
 </code></pre>
 
 </div>

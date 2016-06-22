@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/graph/DuplicateEdgeError.js | API Document</title>
+  <title data-ice="title">src/stack/Stack.js | API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -43,20 +43,72 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/graph/DuplicateEdgeError.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * DuplicateEdgeError: error raised when adding duplicate Vertex value to Graph.
- */
-class DuplicateEdgeError extends Error {
-  constructor(message){
-    super(message);
+<div class="content" data-ice="content"><h1 data-ice="title">src/stack/Stack.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import StackEmptyError from &apos;./StackEmptyError&apos;;
 
-    this.message = message;
-    this.name = &quot;DuplicateEdgeError&quot;;
+/**
+ * Stack: LIFO data structure
+ * Usage: let stack = new Stack();
+ *        stack.push(&apos;A&apos;);
+ *        stack.push(&apos;B&apos;);
+ *        stack.pop();  =&gt; B&apos;
+ */
+class Stack {
+  constructor(){
+    this._items = [];
+  }
+
+  /**
+   * @param {value} pushes value onto the top of the Stack
+   * @return {void}
+   */
+  push(item){
+    this._items.push(item);
+  }
+
+  /**
+   * @param {value} returns last value pushed onto Stack; modifies Stack items in-place
+   * @throws {StackEmptyError} if stack is empty.
+   * @return {&lt;Item&gt;} last value pushed onto Stack.
+   */
+  pop(){
+    if (this.isEmpty()){
+      throw new StackEmptyError(&quot;Cannot pop from empty stack&quot;);
+    }
+    return this._items.splice(this._items.length-1)[0];
+  }
+
+  /**
+   * @return {Number} number of items currently on the stack
+   */
+  count(){
+    return this._items.length;
+  }
+
+  /**
+   * Clears out all items from the Stack.
+   * @return {void}
+   */
+  clear(){
+    this._items.length = 0;
+  }
+
+  /**
+   * @return {Boolean} true if Stack is empty, otherwise false.
+   */
+  isEmpty(){
+    return this._items.length === 0;
+  }
+
+  /**
+   * @return {String} string representation of the Stack structure
+   */
+  print(){
+    return &quot;Stack: &quot; + this._items.toString();
   }
 }
 
-export default DuplicateEdgeError;
+export default Stack;
 </code></pre>
 
 </div>
