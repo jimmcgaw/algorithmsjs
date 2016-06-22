@@ -868,7 +868,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import Node from './Node';\n\nclass LinkedList {\n  constructor(){\n    this.head = undefined;\n  }\n\n  /**\n   * Return the head node of the linked list.\n   * @return {Node} true if any vertex has this value else false\n   */\n  getHead(){\n    return this.head;\n  }\n\n  /**\n   * Sets the node at the head of the LinkedList to the node provided.\n   * @param {Node} value to find in the graph.\n   * @return {void}\n   */\n  setHead(node){\n    this.head = node;\n  }\n\n  /**\n   * @param {element} creates a new Node with element as value and appends to end of LinkedList\n   * @return {void}\n   */\n  append(element){\n    let node = new Node(element);\n    if (!this.getHead()){\n      this.setHead(node);\n    } else {\n      let lastElement = this.getLastNode();\n      lastElement.setNext(node);\n    }\n  }\n\n  /**\n   * Inserts a new Node with element value at specified position LinkedList. Index begins at 0.\n   * @param index {Number} position in LinkedList at which to insert new element\n   * @param {element} creates a new Node with element as value and appends to end of LinkedList\n   * @return {void}\n   */\n  insert(index, element){\n    let nodeToInsert = new Node(element);\n    if (index === 0){\n      // we're inserting at the head of the list\n      let currentHead = this.getHead();\n      if (currentHead){\n        nodeToInsert.setNext(currentHead);\n        this.setHead(nodeToInsert);\n      }\n    } else {\n      let previousNode = this.getNodeAtIndex(index-1);\n      if (previousNode){\n        // get next node in the list if there is one\n        let nodeAtIndex = previousNode.getNext();\n        // set next node to our new node\n        previousNode.setNext(nodeToInsert);\n        if (nodeAtIndex){\n          // break the chain and insert\n          nodeToInsert.setNext(nodeAtIndex);\n        }\n      }\n    }\n  }\n\n  /**\n   * Retrieves the node found at the provided index. If index is out of range or list is empty, returns undefined.\n   * @param index {Number} position in LinkedList at which to retrieve the node.\n   * @return {Node}\n   */\n  getNodeAtIndex(index){\n    if (this.isEmpty()){\n      return undefined;\n    }\n    let currentIndex,\n        currentNode = this.getHead();\n    for (currentIndex = 1; currentIndex <= index; currentIndex++){\n      currentNode = currentNode.getNext();\n      if (typeof currentNode === 'undefined'){\n        break;\n      }\n    }\n    return currentNode;\n  }\n\n  /**\n   * Retrieves the final element in the list.\n   * @return {Node}\n   */\n  getLastNode(){\n    let lastNode = this.getHead();\n    while (lastNode.hasNext()){\n      lastNode = lastNode.getNext();\n    }\n    return lastNode;\n  }\n\n  /**\n   * Returns true if the list contains zero nodes.\n   * @return {Boolean}\n   */\n  isEmpty(element){\n    if (!this.getHead()){\n      return true;\n    }\n    return false;\n  }\n}\n\nexport default LinkedList;\n"
+    "content": "import Node from './Node';\n\n/**\n * LinkedList: represents a (singly, non-circular) linked list.\n */\nclass LinkedList {\n  constructor(){\n    this.head = undefined;\n  }\n\n  /**\n   * Return the head node of the linked list.\n   * @return {Node} true if any vertex has this value else false\n   */\n  getHead(){\n    return this.head;\n  }\n\n  /**\n   * Sets the node at the head of the LinkedList to the node provided.\n   * @param {Node} value to find in the graph.\n   * @return {void}\n   */\n  setHead(node){\n    this.head = node;\n  }\n\n  /**\n   * @param {element} creates a new Node with element as value and appends to end of LinkedList\n   * @return {void}\n   */\n  append(element){\n    let node = new Node(element);\n    if (!this.getHead()){\n      this.setHead(node);\n    } else {\n      let lastElement = this.getLastNode();\n      lastElement.setNext(node);\n    }\n  }\n\n  /**\n   * Inserts a new Node with element value at specified position LinkedList. Index begins at 0.\n   * @param index {Number} position in LinkedList at which to insert new element\n   * @param {element} creates a new Node with element as value and appends to end of LinkedList\n   * @return {void}\n   */\n  insert(index, element){\n    let nodeToInsert = new Node(element);\n    if (index === 0){\n      // we're inserting at the head of the list\n      let currentHead = this.getHead();\n      if (currentHead){\n        nodeToInsert.setNext(currentHead);\n        this.setHead(nodeToInsert);\n      }\n    } else {\n      let previousNode = this.getNodeAtIndex(index-1);\n      if (previousNode){\n        // get next node in the list if there is one\n        let nodeAtIndex = previousNode.getNext();\n        // set next node to our new node\n        previousNode.setNext(nodeToInsert);\n        if (nodeAtIndex){\n          // break the chain and insert\n          nodeToInsert.setNext(nodeAtIndex);\n        }\n      }\n    }\n  }\n\n  /**\n   * Retrieves the node found at the provided index. If index is out of range or list is empty, returns undefined.\n   * @param index {Number} position in LinkedList at which to retrieve the node.\n   * @return {Node}\n   */\n  getNodeAtIndex(index){\n    if (this.isEmpty()){\n      return undefined;\n    }\n    let currentIndex,\n        currentNode = this.getHead();\n    for (currentIndex = 1; currentIndex <= index; currentIndex++){\n      currentNode = currentNode.getNext();\n      if (typeof currentNode === 'undefined'){\n        break;\n      }\n    }\n    return currentNode;\n  }\n\n  /**\n   * Retrieves the final element in the list.\n   * @return {Node}\n   */\n  getLastNode(){\n    let lastNode = this.getHead();\n    while (lastNode.hasNext()){\n      lastNode = lastNode.getNext();\n    }\n    return lastNode;\n  }\n\n  /**\n   * Returns true if the list contains zero nodes.\n   * @return {Boolean}\n   */\n  isEmpty(element){\n    if (!this.getHead()){\n      return true;\n    }\n    return false;\n  }\n}\n\nexport default LinkedList;\n"
   },
   {
     "__docId__": 39,
@@ -882,9 +882,8 @@
     "export": true,
     "importPath": "algorithmsjs/src/linkedlist/LinkedList.js",
     "importStyle": "LinkedList",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "LinkedList: represents a (singly, non-circular) linked list.",
+    "lineNumber": 6,
     "interface": false
   },
   {
@@ -897,7 +896,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 4,
+    "lineNumber": 7,
     "undocument": true,
     "params": [],
     "generator": false
@@ -912,7 +911,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#head",
     "access": null,
     "description": null,
-    "lineNumber": 5,
+    "lineNumber": 8,
     "undocument": true,
     "type": {
       "types": [
@@ -930,7 +929,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#getHead",
     "access": null,
     "description": "Return the head node of the linked list.",
-    "lineNumber": 12,
+    "lineNumber": 15,
     "params": [],
     "return": {
       "nullable": null,
@@ -952,7 +951,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#setHead",
     "access": null,
     "description": "Sets the node at the head of the LinkedList to the node provided.",
-    "lineNumber": 21,
+    "lineNumber": 24,
     "params": [
       {
         "nullable": null,
@@ -985,7 +984,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#head",
     "access": null,
     "description": null,
-    "lineNumber": 22,
+    "lineNumber": 25,
     "undocument": true,
     "type": {
       "types": [
@@ -1003,7 +1002,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#append",
     "access": null,
     "description": "",
-    "lineNumber": 29,
+    "lineNumber": 32,
     "params": [
       {
         "nullable": null,
@@ -1036,7 +1035,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#insert",
     "access": null,
     "description": "Inserts a new Node with element value at specified position LinkedList. Index begins at 0.",
-    "lineNumber": 45,
+    "lineNumber": 48,
     "params": [
       {
         "nullable": null,
@@ -1079,7 +1078,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#getNodeAtIndex",
     "access": null,
     "description": "Retrieves the node found at the provided index. If index is out of range or list is empty, returns undefined.",
-    "lineNumber": 74,
+    "lineNumber": 77,
     "params": [
       {
         "nullable": null,
@@ -1112,7 +1111,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#getLastNode",
     "access": null,
     "description": "Retrieves the final element in the list.",
-    "lineNumber": 93,
+    "lineNumber": 96,
     "params": [],
     "return": {
       "nullable": null,
@@ -1134,7 +1133,7 @@
     "longname": "src/linkedlist/LinkedList.js~LinkedList#isEmpty",
     "access": null,
     "description": "Returns true if the list contains zero nodes.",
-    "lineNumber": 105,
+    "lineNumber": 108,
     "params": [
       {
         "name": "element",

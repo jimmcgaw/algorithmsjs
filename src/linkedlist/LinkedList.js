@@ -1,5 +1,8 @@
 import Node from './Node';
 
+/**
+ * LinkedList: represents a (singly, non-circular) linked list.
+ */
 class LinkedList {
   constructor(){
     this.head = undefined;
