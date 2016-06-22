@@ -594,6 +594,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/linkedlist/linkedlist.js~linkedlist#count",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-count",
+    "src/linkedlist/LinkedList.js~LinkedList#count",
+    "method"
+  ],
+  [
     "src/linkedlist/linkedlist.js~linkedlist#gethead",
     "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-getHead",
     "src/linkedlist/LinkedList.js~LinkedList#getHead",

@@ -160,6 +160,24 @@ class LinkedList {
     }
     return false;
   }
+
+  /**
+   * Returns the count of the number of nodes in the list
+   * @return {Number}
+   */
+  count(){
+    if (this.isEmpty()){
+      return 0;
+    } else {
+      let lastIndex = 1;
+      let lastNode = this.getHead();
+      while (lastNode.hasNext()){
+        lastNode = lastNode.getNext();
+        lastIndex++
+      }
+      return lastIndex;
+    }
+  }
 }
 
 export default LinkedList;

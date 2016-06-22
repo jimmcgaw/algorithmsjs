@@ -137,5 +137,17 @@ describe('LinkedList', function () {
       linkedList.append('A');
       expect(linkedList.isEmpty()).to.equal(false);
     });
+  });
+
+  describe('#count', function () {
+    it('returns the count of the nodes currently in the list', function () {
+      expect(linkedList.count()).to.equal(0);
+      let items = ['A', 'B', 'C', 'D'];
+      items.forEach((item) => {
+        linkedList.append(item);
+      });
+      expect(linkedList.count()).to.equal(items.length);
+
+    });
   })
 })
