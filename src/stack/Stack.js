@@ -13,7 +13,8 @@ class Stack {
   }
 
   /**
-   * @param {value} pushes value onto the top of the Stack
+   * Appends an item to the top of the Stack.
+   * @param {value} value to push onto the top of the Stack
    * @return {void}
    */
   push(item){
@@ -21,7 +22,7 @@ class Stack {
   }
 
   /**
-   * @param {value} returns last value pushed onto Stack; modifies Stack items in-place
+   * returns last value pushed onto Stack; modifies Stack items in-place
    * @throws {StackEmptyError} if stack is empty.
    * @return {<Item>} last value pushed onto Stack.
    */
@@ -33,7 +34,8 @@ class Stack {
   }
 
   /**
-   * @return {Number} number of items currently on the stack
+   * Gets number of items currently on the stack.
+   * @return {Number}
    */
   count(){
     return this._items.length;
@@ -48,10 +50,11 @@ class Stack {
   }
 
   /**
+   * Returns boolean value based on contents of stack.
    * @return {Boolean} true if Stack is empty, otherwise false.
    */
   isEmpty(){
-    return this._items.length === 0;
+    return this.count() === 0;
   }
 
   /**

@@ -868,7 +868,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import StackEmptyError from './StackEmptyError';\n\n/**\n * Stack: LIFO data structure\n * Usage: let stack = new Stack();\n *        stack.push('A');\n *        stack.push('B');\n *        stack.pop();  => B'\n */\nclass Stack {\n  constructor(){\n    this._items = [];\n  }\n\n  /**\n   * @param {value} pushes value onto the top of the Stack\n   * @return {void}\n   */\n  push(item){\n    this._items.push(item);\n  }\n\n  /**\n   * @param {value} returns last value pushed onto Stack; modifies Stack items in-place\n   * @throws {StackEmptyError} if stack is empty.\n   * @return {<Item>} last value pushed onto Stack.\n   */\n  pop(){\n    if (this.isEmpty()){\n      throw new StackEmptyError(\"Cannot pop from empty stack\");\n    }\n    return this._items.splice(this._items.length-1)[0];\n  }\n\n  /**\n   * @return {Number} number of items currently on the stack\n   */\n  count(){\n    return this._items.length;\n  }\n\n  /**\n   * Clears out all items from the Stack.\n   * @return {void}\n   */\n  clear(){\n    this._items.length = 0;\n  }\n\n  /**\n   * @return {Boolean} true if Stack is empty, otherwise false.\n   */\n  isEmpty(){\n    return this._items.length === 0;\n  }\n\n  /**\n   * @return {String} string representation of the Stack structure\n   */\n  print(){\n    return \"Stack: \" + this._items.toString();\n  }\n}\n\nexport default Stack;\n"
+    "content": "import StackEmptyError from './StackEmptyError';\n\n/**\n * Stack: LIFO data structure\n * Usage: let stack = new Stack();\n *        stack.push('A');\n *        stack.push('B');\n *        stack.pop();  => B'\n */\nclass Stack {\n  constructor(){\n    this._items = [];\n  }\n\n  /**\n   * Appends an item to the top of the Stack.\n   * @param {value} value to push onto the top of the Stack\n   * @return {void}\n   */\n  push(item){\n    this._items.push(item);\n  }\n\n  /**\n   * returns last value pushed onto Stack; modifies Stack items in-place\n   * @throws {StackEmptyError} if stack is empty.\n   * @return {<Item>} last value pushed onto Stack.\n   */\n  pop(){\n    if (this.isEmpty()){\n      throw new StackEmptyError(\"Cannot pop from empty stack\");\n    }\n    return this._items.splice(this._items.length-1)[0];\n  }\n\n  /**\n   * Gets number of items currently on the stack.\n   * @return {Number}\n   */\n  count(){\n    return this._items.length;\n  }\n\n  /**\n   * Clears out all items from the Stack.\n   * @return {void}\n   */\n  clear(){\n    this._items.length = 0;\n  }\n\n  /**\n   * Returns boolean value based on contents of stack.\n   * @return {Boolean} true if Stack is empty, otherwise false.\n   */\n  isEmpty(){\n    return this.count() === 0;\n  }\n\n  /**\n   * @return {String} string representation of the Stack structure\n   */\n  print(){\n    return \"Stack: \" + this._items.toString();\n  }\n}\n\nexport default Stack;\n"
   },
   {
     "__docId__": 39,
@@ -928,8 +928,8 @@
     "memberof": "src/stack/Stack.js~Stack",
     "longname": "src/stack/Stack.js~Stack#push",
     "access": null,
-    "description": "",
-    "lineNumber": 19,
+    "description": "Appends an item to the top of the Stack.",
+    "lineNumber": 20,
     "params": [
       {
         "nullable": null,
@@ -938,8 +938,8 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "pushes",
-        "description": "value onto the top of the Stack"
+        "name": "value",
+        "description": "to push onto the top of the Stack"
       }
     ],
     "return": {
@@ -961,20 +961,9 @@
     "memberof": "src/stack/Stack.js~Stack",
     "longname": "src/stack/Stack.js~Stack#pop",
     "access": null,
-    "description": "",
-    "lineNumber": 28,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "value"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "returns",
-        "description": "last value pushed onto Stack; modifies Stack items in-place"
-      }
-    ],
+    "description": "returns last value pushed onto Stack; modifies Stack items in-place",
+    "lineNumber": 29,
+    "params": [],
     "return": {
       "nullable": null,
       "types": [
@@ -1002,8 +991,8 @@
     "memberof": "src/stack/Stack.js~Stack",
     "longname": "src/stack/Stack.js~Stack#count",
     "access": null,
-    "description": "",
-    "lineNumber": 38,
+    "description": "Gets number of items currently on the stack.",
+    "lineNumber": 40,
     "params": [],
     "return": {
       "nullable": null,
@@ -1011,7 +1000,7 @@
         "Number"
       ],
       "spread": false,
-      "description": "number of items currently on the stack"
+      "description": ""
     },
     "generator": false
   },
@@ -1025,7 +1014,7 @@
     "longname": "src/stack/Stack.js~Stack#clear",
     "access": null,
     "description": "Clears out all items from the Stack.",
-    "lineNumber": 46,
+    "lineNumber": 48,
     "params": [],
     "return": {
       "nullable": null,
@@ -1046,8 +1035,8 @@
     "memberof": "src/stack/Stack.js~Stack",
     "longname": "src/stack/Stack.js~Stack#isEmpty",
     "access": null,
-    "description": "",
-    "lineNumber": 53,
+    "description": "Returns boolean value based on contents of stack.",
+    "lineNumber": 56,
     "params": [],
     "return": {
       "nullable": null,
@@ -1069,7 +1058,7 @@
     "longname": "src/stack/Stack.js~Stack#print",
     "access": null,
     "description": "",
-    "lineNumber": 60,
+    "lineNumber": 63,
     "params": [],
     "return": {
       "nullable": null,
