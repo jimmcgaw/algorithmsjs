@@ -1,15 +1,15 @@
 {
   "name": "algorithmsjs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Basic collection of algorithm and data structure implementations",
   "main": "index.js",
   "scripts": {
     "docgen": "node_modules/.bin/esdoc -c esdoc.json",
     "docs": "open docs/index.html",
     "test": "node_modules/.bin/mocha --compilers js:babel-core/register tests/**/*.test.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["algorithms", "data structures"],
+  "author": "Jim McGaw <jpmcgaw@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.10.4",

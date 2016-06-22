@@ -1,7 +1,6 @@
 import {expect} from 'chai';
 
 import LinkedList from '../../src/linkedlist/LinkedList';
-import Node from '../../src/linkedlist/Node';
 
 describe('LinkedList', function () {
   let linkedList;
