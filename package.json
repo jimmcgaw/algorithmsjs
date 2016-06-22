@@ -1,5 +1,5 @@
 {
-  "name": "algorithmsjs",
+  "name": "compscijs",
   "version": "0.0.1",
   "description": "Basic collection of algorithm and data structure implementations",
   "main": "index.js",
@@ -11,11 +11,13 @@
   "keywords": ["algorithms", "data structures"],
   "author": "Jim McGaw <jpmcgaw@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies":{
     "babel-core": "^6.10.4",
     "babel-preset-es2015": "^6.9.0",
+    "esdoc": "^0.4.7"
+  },
+  "devDependencies": {
     "chai": "^3.5.0",
-    "esdoc": "^0.4.7",
     "mocha": "^2.5.3"
   }
 }
