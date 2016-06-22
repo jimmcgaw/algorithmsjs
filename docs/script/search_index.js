@@ -24,6 +24,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "algorithmsjs/src/linkedlist/linkedlist.js~linkedlist",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html",
+    "<span>LinkedList</span> <span class=\"search-result-import-path\">algorithmsjs/src/linkedlist/LinkedList.js</span>",
+    "class"
+  ],
+  [
+    "algorithmsjs/src/linkedlist/node.js~node",
+    "class/src/linkedlist/Node.js~Node.html",
+    "<span>Node</span> <span class=\"search-result-import-path\">algorithmsjs/src/linkedlist/Node.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/queue/queue.js~queue",
     "class/src/queue/Queue.js~Queue.html",
     "<span>Queue</span> <span class=\"search-result-import-path\">algorithmsjs/src/queue/Queue.js</span>",
@@ -562,6 +574,114 @@ window.esdocSearchIndex = [
     "class/src/graph/Vertex.js~Vertex.html#instance-member-value",
     "src/graph/Vertex.js~Vertex#value",
     "member"
+  ],
+  [
+    "src/linkedlist/linkedlist.js",
+    "file/src/linkedlist/LinkedList.js.html",
+    "src/linkedlist/LinkedList.js",
+    "file"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#append",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-append",
+    "src/linkedlist/LinkedList.js~LinkedList#append",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#constructor",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-constructor-constructor",
+    "src/linkedlist/LinkedList.js~LinkedList#constructor",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#gethead",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-getHead",
+    "src/linkedlist/LinkedList.js~LinkedList#getHead",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#getlastnode",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-getLastNode",
+    "src/linkedlist/LinkedList.js~LinkedList#getLastNode",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#getnodeatindex",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-getNodeAtIndex",
+    "src/linkedlist/LinkedList.js~LinkedList#getNodeAtIndex",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#head",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-member-head",
+    "src/linkedlist/LinkedList.js~LinkedList#head",
+    "member"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#insert",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-insert",
+    "src/linkedlist/LinkedList.js~LinkedList#insert",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#isempty",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-isEmpty",
+    "src/linkedlist/LinkedList.js~LinkedList#isEmpty",
+    "method"
+  ],
+  [
+    "src/linkedlist/linkedlist.js~linkedlist#sethead",
+    "class/src/linkedlist/LinkedList.js~LinkedList.html#instance-method-setHead",
+    "src/linkedlist/LinkedList.js~LinkedList#setHead",
+    "method"
+  ],
+  [
+    "src/linkedlist/node.js",
+    "file/src/linkedlist/Node.js.html",
+    "src/linkedlist/Node.js",
+    "file"
+  ],
+  [
+    "src/linkedlist/node.js~node#constructor",
+    "class/src/linkedlist/Node.js~Node.html#instance-constructor-constructor",
+    "src/linkedlist/Node.js~Node#constructor",
+    "method"
+  ],
+  [
+    "src/linkedlist/node.js~node#element",
+    "class/src/linkedlist/Node.js~Node.html#instance-member-element",
+    "src/linkedlist/Node.js~Node#element",
+    "member"
+  ],
+  [
+    "src/linkedlist/node.js~node#getnext",
+    "class/src/linkedlist/Node.js~Node.html#instance-method-getNext",
+    "src/linkedlist/Node.js~Node#getNext",
+    "method"
+  ],
+  [
+    "src/linkedlist/node.js~node#hasnext",
+    "class/src/linkedlist/Node.js~Node.html#instance-method-hasNext",
+    "src/linkedlist/Node.js~Node#hasNext",
+    "method"
+  ],
+  [
+    "src/linkedlist/node.js~node#next",
+    "class/src/linkedlist/Node.js~Node.html#instance-member-next",
+    "src/linkedlist/Node.js~Node#next",
+    "member"
+  ],
+  [
+    "src/linkedlist/node.js~node#previous",
+    "class/src/linkedlist/Node.js~Node.html#instance-member-previous",
+    "src/linkedlist/Node.js~Node#previous",
+    "member"
+  ],
+  [
+    "src/linkedlist/node.js~node#setnext",
+    "class/src/linkedlist/Node.js~Node.html#instance-method-setNext",
+    "src/linkedlist/Node.js~Node#setNext",
+    "method"
   ],
   [
     "src/queue/queue.js",
