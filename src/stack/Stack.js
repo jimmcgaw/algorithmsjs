@@ -14,7 +14,7 @@ class Stack {
 
   /**
    * Appends an item to the top of the Stack.
-   * @param {value} value to push onto the top of the Stack
+   * @param {item} value to push onto the top of the Stack
    * @return {void}
    */
   push(item){

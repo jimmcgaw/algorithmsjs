@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">Stack | API Document</title>
+  <title data-ice="title">Queue | API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -45,17 +45,17 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Stack from &apos;<span><a href="file/src/stack/Stack.js.html#lineNumber10">algorithmsjs/src/stack/Stack.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Queue from &apos;<span><a href="file/src/queue/Queue.js.html#lineNumber8">algorithmsjs/src/queue/Queue.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/stack/Stack.js.html#lineNumber10">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/queue/Queue.js.html#lineNumber8">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">Stack</h1>
+  <h1 data-ice="name">Queue</h1>
 
   
 
@@ -71,11 +71,11 @@
 
   
   
-  <div class="description" data-ice="description"><p>Stack: LIFO data structure
-Usage: let stack = new Stack();
-       stack.push(&apos;A&apos;);
-       stack.push(&apos;B&apos;);
-       stack.pop();  =&gt; B&apos;</p>
+  <div class="description" data-ice="description"><p>Stack: FIFO data structure
+Usage: let queue = new Queue();
+       queue.enqueue(&apos;A&apos;);
+       queue.enqueue(&apos;B&apos;);
+       queue.dequeue();  =&gt; A&apos;</p>
 </div>
 
   
@@ -104,7 +104,7 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-constructor-constructor">constructor</a></span></span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-constructor-constructor">constructor</a></span></span>
         </p>
       </div>
       <div>
@@ -137,13 +137,13 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-clear">clear</a></span></span><span data-ice="signature">(): <span>void</span></span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-method-clear">clear</a></span></span><span data-ice="signature">(): <span>void</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Clears out all items from the Stack.</p>
+        <div data-ice="description"><p>Clears all items currently in the queue</p>
 </div>
       </div>
     </td>
@@ -163,13 +163,13 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-count">count</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-method-count">count</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Gets number of items currently on the stack.</p>
+        <div data-ice="description"><p>Returns the current count of the items in the Queue.</p>
 </div>
       </div>
     </td>
@@ -189,13 +189,13 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-isEmpty">isEmpty</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-method-dequeue">dequeue</a></span></span><span data-ice="signature">(): &lt;<span>Item</span>&gt;</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Returns boolean value based on contents of stack.</p>
+        <div data-ice="description"><p>Dequeues the oldest item enqueued into the queue.</p>
 </div>
       </div>
     </td>
@@ -215,13 +215,13 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-pop">pop</a></span></span><span data-ice="signature">(): &lt;<span>Item</span>&gt;</span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-method-enqueue">enqueue</a></span></span><span data-ice="signature">(item: <span>item</span>): <span><a href="class/src/queue/Queue.js~Queue.html">Queue</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>returns last value pushed onto Stack; modifies Stack items in-place</p>
+        <div data-ice="description"><p>Enqueues an item to the front of the Queue.</p>
 </div>
       </div>
     </td>
@@ -241,38 +241,13 @@ Usage: let stack = new Stack();
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-print">print</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
+           <span data-ice="name"><span><a href="class/src/queue/Queue.js~Queue.html#instance-method-isEmpty">isEmpty</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/stack/Stack.js~Stack.html#instance-method-push">push</a></span></span><span data-ice="signature">(value: <span>item</span>): <span>void</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Appends an item to the top of the Stack.</p>
+        <div data-ice="description"><p>Returns true if the Queue contains no items, otherwise false.</p>
 </div>
       </div>
     </td>
@@ -302,7 +277,7 @@ Usage: let stack = new Stack();
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber11">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber9">source</a></span></span>
     </span>
   </h3>
 
@@ -346,14 +321,14 @@ Usage: let stack = new Stack();
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber48">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber54">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Clears out all items from the Stack.</p>
+  <div data-ice="description"><p>Clears all items currently in the queue</p>
 </div>
 
   
@@ -397,14 +372,14 @@ Usage: let stack = new Stack();
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber40">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber46">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Gets number of items currently on the stack.</p>
+  <div data-ice="description"><p>Returns the current count of the items in the Queue.</p>
 </div>
 
   
@@ -438,76 +413,24 @@ Usage: let stack = new Stack();
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-isEmpty">
+  <h3 data-ice="anchor" id="instance-method-dequeue">
     <span class="access" data-ice="access">public</span>
     
     
     
     
-    <span data-ice="name">isEmpty</span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+    <span data-ice="name">dequeue</span><span data-ice="signature">(): &lt;<span>Item</span>&gt;</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber56">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber27">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Returns boolean value based on contents of stack.</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
-        <td class="return-desc" data-ice="returnDescription"><p>true if Stack is empty, otherwise false.</p>
-</td>
-      </tr>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-pop">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    <span data-ice="name">pop</span><span data-ice="signature">(): &lt;<span>Item</span>&gt;</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber29">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>returns last value pushed onto Stack; modifies Stack items in-place</p>
+  <div data-ice="description"><p>Dequeues the oldest item enqueued into the queue.</p>
 </div>
 
   
@@ -520,71 +443,7 @@ Usage: let stack = new Stack();
     <table>
       <tr>
         <td class="return-type" data-ice="returnType">&lt;<span>Item</span>&gt;</td>
-        <td class="return-desc" data-ice="returnDescription"><p>last value pushed onto Stack.</p>
-</td>
-      </tr>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  <div data-ice="throwWrap">
-    <h4>Throw:</h4>
-    <table>
-      <tbody>
-      
-      <tr class="throw" data-ice="throw">
-        <td><p data-ice="throwName"><span><a href="class/src/stack/StackEmptyError.js~StackEmptyError.html">StackEmptyError</a></span></p></td>
-        <td data-ice="throwDesc"><p>if stack is empty.</p>
-</td>
-      </tr>
-</tbody>
-    </table>
-  </div>
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-print">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    <span data-ice="name">print</span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber63">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></span></td>
-        <td class="return-desc" data-ice="returnDescription"><p>string representation of the Stack structure</p>
-</td>
+        
       </tr>
     </table>
     <div data-ice="returnProperties">
@@ -605,24 +464,24 @@ Usage: let stack = new Stack();
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-push">
+  <h3 data-ice="anchor" id="instance-method-enqueue">
     <span class="access" data-ice="access">public</span>
     
     
     
     
-    <span data-ice="name">push</span><span data-ice="signature">(value: <span>item</span>): <span>void</span></span>
+    <span data-ice="name">enqueue</span><span data-ice="signature">(item: <span>item</span>): <span><a href="class/src/queue/Queue.js~Queue.html">Queue</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/stack/Stack.js.html#lineNumber20">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber18">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Appends an item to the top of the Stack.</p>
+  <div data-ice="description"><p>Enqueues an item to the front of the Queue.</p>
 </div>
 
   
@@ -636,10 +495,10 @@ Usage: let stack = new Stack();
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">value</td>
+      <td data-ice="name" data-depth="0">item</td>
       <td data-ice="type"><span>item</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>to push onto the top of the Stack</p>
+      <td data-ice="description"><p>to set on the vertex</p>
 </td>
     </tr>
 </tbody>
@@ -651,7 +510,59 @@ Usage: let stack = new Stack();
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span>void</span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="class/src/queue/Queue.js~Queue.html">Queue</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>current instance of graph.</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-isEmpty">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">isEmpty</span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/queue/Queue.js.html#lineNumber38">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Returns true if the Queue contains no items, otherwise false.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span></td>
         
       </tr>
     </table>

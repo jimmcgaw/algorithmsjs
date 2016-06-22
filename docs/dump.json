@@ -862,16 +862,199 @@
     "kind": "file",
     "static": true,
     "variation": null,
+    "name": "src/queue/Queue.js",
+    "memberof": null,
+    "longname": "src/queue/Queue.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 8,
+    "content": "/**\n * Stack: FIFO data structure\n * Usage: let queue = new Queue();\n *        queue.enqueue('A');\n *        queue.enqueue('B');\n *        queue.dequeue();  => A'\n */\nclass Queue {\n  constructor(){\n    this._items = [];\n  }\n\n  /**\n   * Enqueues an item to the front of the Queue.\n   * @param {item} item to set on the vertex\n   * @return {Queue} current instance of graph.\n   */\n  enqueue(item){\n    this._items.push(item);\n    return this;\n  }\n\n  /**\n   * Dequeues the oldest item enqueued into the queue.\n   * @return {<Item>}\n   */\n  dequeue(){\n    if (this.isEmpty()){\n      return undefined;\n    }\n    return this._items.splice(0, 1)[0];\n  }\n\n  /**\n   * Returns true if the Queue contains no items, otherwise false.\n   * @return {Boolean}\n   */\n  isEmpty(){\n    return this.count() === 0;\n  }\n\n  /**\n   * Returns the current count of the items in the Queue.\n   * @return {Number}\n   */\n  count(){\n    return this._items.length;\n  }\n\n  /**\n   * Clears all items currently in the queue\n   * @return {void}\n   */\n   clear(){\n     this._items.length = 0;\n   }\n}\n\nexport default Queue;\n"
+  },
+  {
+    "__docId__": 39,
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Queue",
+    "memberof": "src/queue/Queue.js",
+    "longname": "src/queue/Queue.js~Queue",
+    "access": null,
+    "export": true,
+    "importPath": "algorithmsjs/src/queue/Queue.js",
+    "importStyle": "Queue",
+    "description": "Stack: FIFO data structure\nUsage: let queue = new Queue();\n       queue.enqueue('A');\n       queue.enqueue('B');\n       queue.dequeue();  => A'",
+    "lineNumber": 8,
+    "interface": false
+  },
+  {
+    "__docId__": 40,
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "__docId__": 41,
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "_items",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#_items",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 42,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "enqueue",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#enqueue",
+    "access": null,
+    "description": "Enqueues an item to the front of the Queue.",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "item"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "item",
+        "description": "to set on the vertex"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Queue"
+      ],
+      "spread": false,
+      "description": "current instance of graph."
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 43,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "dequeue",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#dequeue",
+    "access": null,
+    "description": "Dequeues the oldest item enqueued into the queue.",
+    "lineNumber": 27,
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "<Item>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 44,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "isEmpty",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#isEmpty",
+    "access": null,
+    "description": "Returns true if the Queue contains no items, otherwise false.",
+    "lineNumber": 38,
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 45,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "count",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#count",
+    "access": null,
+    "description": "Returns the current count of the items in the Queue.",
+    "lineNumber": 46,
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 46,
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "clear",
+    "memberof": "src/queue/Queue.js~Queue",
+    "longname": "src/queue/Queue.js~Queue#clear",
+    "access": null,
+    "description": "Clears all items currently in the queue",
+    "lineNumber": 54,
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "void"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 47,
+    "kind": "file",
+    "static": true,
+    "variation": null,
     "name": "src/stack/Stack.js",
     "memberof": null,
     "longname": "src/stack/Stack.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import StackEmptyError from './StackEmptyError';\n\n/**\n * Stack: LIFO data structure\n * Usage: let stack = new Stack();\n *        stack.push('A');\n *        stack.push('B');\n *        stack.pop();  => B'\n */\nclass Stack {\n  constructor(){\n    this._items = [];\n  }\n\n  /**\n   * Appends an item to the top of the Stack.\n   * @param {value} value to push onto the top of the Stack\n   * @return {void}\n   */\n  push(item){\n    this._items.push(item);\n  }\n\n  /**\n   * returns last value pushed onto Stack; modifies Stack items in-place\n   * @throws {StackEmptyError} if stack is empty.\n   * @return {<Item>} last value pushed onto Stack.\n   */\n  pop(){\n    if (this.isEmpty()){\n      throw new StackEmptyError(\"Cannot pop from empty stack\");\n    }\n    return this._items.splice(this._items.length-1)[0];\n  }\n\n  /**\n   * Gets number of items currently on the stack.\n   * @return {Number}\n   */\n  count(){\n    return this._items.length;\n  }\n\n  /**\n   * Clears out all items from the Stack.\n   * @return {void}\n   */\n  clear(){\n    this._items.length = 0;\n  }\n\n  /**\n   * Returns boolean value based on contents of stack.\n   * @return {Boolean} true if Stack is empty, otherwise false.\n   */\n  isEmpty(){\n    return this.count() === 0;\n  }\n\n  /**\n   * @return {String} string representation of the Stack structure\n   */\n  print(){\n    return \"Stack: \" + this._items.toString();\n  }\n}\n\nexport default Stack;\n"
+    "content": "import StackEmptyError from './StackEmptyError';\n\n/**\n * Stack: LIFO data structure\n * Usage: let stack = new Stack();\n *        stack.push('A');\n *        stack.push('B');\n *        stack.pop();  => B'\n */\nclass Stack {\n  constructor(){\n    this._items = [];\n  }\n\n  /**\n   * Appends an item to the top of the Stack.\n   * @param {item} value to push onto the top of the Stack\n   * @return {void}\n   */\n  push(item){\n    this._items.push(item);\n  }\n\n  /**\n   * returns last value pushed onto Stack; modifies Stack items in-place\n   * @throws {StackEmptyError} if stack is empty.\n   * @return {<Item>} last value pushed onto Stack.\n   */\n  pop(){\n    if (this.isEmpty()){\n      throw new StackEmptyError(\"Cannot pop from empty stack\");\n    }\n    return this._items.splice(this._items.length-1)[0];\n  }\n\n  /**\n   * Gets number of items currently on the stack.\n   * @return {Number}\n   */\n  count(){\n    return this._items.length;\n  }\n\n  /**\n   * Clears out all items from the Stack.\n   * @return {void}\n   */\n  clear(){\n    this._items.length = 0;\n  }\n\n  /**\n   * Returns boolean value based on contents of stack.\n   * @return {Boolean} true if Stack is empty, otherwise false.\n   */\n  isEmpty(){\n    return this.count() === 0;\n  }\n\n  /**\n   * @return {String} string representation of the Stack structure\n   */\n  print(){\n    return \"Stack: \" + this._items.toString();\n  }\n}\n\nexport default Stack;\n"
   },
   {
-    "__docId__": 39,
+    "__docId__": 48,
     "kind": "class",
     "static": true,
     "variation": null,
@@ -887,7 +1070,7 @@
     "interface": false
   },
   {
-    "__docId__": 40,
+    "__docId__": 49,
     "kind": "constructor",
     "static": false,
     "variation": null,
@@ -902,7 +1085,7 @@
     "generator": false
   },
   {
-    "__docId__": 41,
+    "__docId__": 50,
     "kind": "member",
     "static": false,
     "variation": null,
@@ -920,7 +1103,7 @@
     }
   },
   {
-    "__docId__": 42,
+    "__docId__": 51,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -934,7 +1117,7 @@
       {
         "nullable": null,
         "types": [
-          "value"
+          "item"
         ],
         "spread": false,
         "optional": false,
@@ -953,7 +1136,7 @@
     "generator": false
   },
   {
-    "__docId__": 43,
+    "__docId__": 52,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -983,7 +1166,7 @@
     "generator": false
   },
   {
-    "__docId__": 44,
+    "__docId__": 53,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -1005,7 +1188,7 @@
     "generator": false
   },
   {
-    "__docId__": 45,
+    "__docId__": 54,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -1027,7 +1210,7 @@
     "generator": false
   },
   {
-    "__docId__": 46,
+    "__docId__": 55,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -1049,7 +1232,7 @@
     "generator": false
   },
   {
-    "__docId__": 47,
+    "__docId__": 56,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -1071,7 +1254,7 @@
     "generator": false
   },
   {
-    "__docId__": 48,
+    "__docId__": 57,
     "kind": "file",
     "static": true,
     "variation": null,
@@ -1084,7 +1267,7 @@
     "content": "class StackEmptyError extends Error {\n  constructor(message){\n    super(message);\n    this.message = message;\n    this.name = \"StackEmptyError\";\n  }\n}\n\nexport default StackEmptyError;\n"
   },
   {
-    "__docId__": 49,
+    "__docId__": 58,
     "kind": "class",
     "static": true,
     "variation": null,
@@ -1104,7 +1287,7 @@
     ]
   },
   {
-    "__docId__": 50,
+    "__docId__": 59,
     "kind": "constructor",
     "static": false,
     "variation": null,
@@ -1126,7 +1309,7 @@
     "generator": false
   },
   {
-    "__docId__": 51,
+    "__docId__": 60,
     "kind": "member",
     "static": false,
     "variation": null,
@@ -1144,7 +1327,7 @@
     }
   },
   {
-    "__docId__": 52,
+    "__docId__": 61,
     "kind": "member",
     "static": false,
     "variation": null,
@@ -1162,7 +1345,7 @@
     }
   },
   {
-    "__docId__": 54,
+    "__docId__": 63,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1175,7 +1358,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 55,
+    "__docId__": 64,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1188,7 +1371,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 56,
+    "__docId__": 65,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1201,7 +1384,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 57,
+    "__docId__": 66,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1214,7 +1397,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 58,
+    "__docId__": 67,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1227,7 +1410,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 59,
+    "__docId__": 68,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1240,7 +1423,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 60,
+    "__docId__": 69,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1253,7 +1436,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 70,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1266,7 +1449,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 62,
+    "__docId__": 71,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1279,7 +1462,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 63,
+    "__docId__": 72,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1292,7 +1475,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 64,
+    "__docId__": 73,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1305,7 +1488,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 65,
+    "__docId__": 74,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1318,7 +1501,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 66,
+    "__docId__": 75,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1331,7 +1514,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 67,
+    "__docId__": 76,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1344,7 +1527,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 68,
+    "__docId__": 77,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1357,7 +1540,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 69,
+    "__docId__": 78,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1370,7 +1553,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 70,
+    "__docId__": 79,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1383,7 +1566,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 71,
+    "__docId__": 80,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1396,7 +1579,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 72,
+    "__docId__": 81,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1409,7 +1592,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 73,
+    "__docId__": 82,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1422,7 +1605,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 74,
+    "__docId__": 83,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1435,7 +1618,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 75,
+    "__docId__": 84,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1448,7 +1631,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 76,
+    "__docId__": 85,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1461,7 +1644,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 77,
+    "__docId__": 86,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1474,7 +1657,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 78,
+    "__docId__": 87,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1487,7 +1670,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 79,
+    "__docId__": 88,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1500,7 +1683,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 80,
+    "__docId__": 89,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1513,7 +1696,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 81,
+    "__docId__": 90,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1526,7 +1709,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 82,
+    "__docId__": 91,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1539,7 +1722,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 83,
+    "__docId__": 92,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1552,7 +1735,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 84,
+    "__docId__": 93,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1565,7 +1748,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 85,
+    "__docId__": 94,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1578,7 +1761,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 86,
+    "__docId__": 95,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1591,7 +1774,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 87,
+    "__docId__": 96,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1604,7 +1787,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 88,
+    "__docId__": 97,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1617,7 +1800,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 89,
+    "__docId__": 98,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1630,7 +1813,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 90,
+    "__docId__": 99,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1643,7 +1826,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 91,
+    "__docId__": 100,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1656,7 +1839,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 92,
+    "__docId__": 101,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1669,7 +1852,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 93,
+    "__docId__": 102,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1682,7 +1865,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 94,
+    "__docId__": 103,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1695,7 +1878,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 95,
+    "__docId__": 104,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1708,7 +1891,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 96,
+    "__docId__": 105,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1721,7 +1904,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 97,
+    "__docId__": 106,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1734,7 +1917,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 98,
+    "__docId__": 107,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1747,7 +1930,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 99,
+    "__docId__": 108,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1760,7 +1943,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 100,
+    "__docId__": 109,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1773,7 +1956,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 102,
+    "__docId__": 111,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1786,7 +1969,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 103,
+    "__docId__": 112,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1799,7 +1982,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 104,
+    "__docId__": 113,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1812,7 +1995,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 105,
+    "__docId__": 114,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1825,7 +2008,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 106,
+    "__docId__": 115,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1838,7 +2021,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 107,
+    "__docId__": 116,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1851,7 +2034,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 108,
+    "__docId__": 117,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -1864,7 +2047,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 109,
+    "__docId__": 118,
     "kind": "external",
     "static": true,
     "variation": null,

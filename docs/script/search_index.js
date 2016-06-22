@@ -24,6 +24,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "algorithmsjs/src/queue/queue.js~queue",
+    "class/src/queue/Queue.js~Queue.html",
+    "<span>Queue</span> <span class=\"search-result-import-path\">algorithmsjs/src/queue/Queue.js</span>",
+    "class"
+  ],
+  [
     "algorithmsjs/src/stack/stack.js~stack",
     "class/src/stack/Stack.js~Stack.html",
     "<span>Stack</span> <span class=\"search-result-import-path\">algorithmsjs/src/stack/Stack.js</span>",
@@ -556,6 +562,48 @@ window.esdocSearchIndex = [
     "class/src/graph/Vertex.js~Vertex.html#instance-member-value",
     "src/graph/Vertex.js~Vertex#value",
     "member"
+  ],
+  [
+    "src/queue/queue.js",
+    "file/src/queue/Queue.js.html",
+    "src/queue/Queue.js",
+    "file"
+  ],
+  [
+    "src/queue/queue.js~queue#clear",
+    "class/src/queue/Queue.js~Queue.html#instance-method-clear",
+    "src/queue/Queue.js~Queue#clear",
+    "method"
+  ],
+  [
+    "src/queue/queue.js~queue#constructor",
+    "class/src/queue/Queue.js~Queue.html#instance-constructor-constructor",
+    "src/queue/Queue.js~Queue#constructor",
+    "method"
+  ],
+  [
+    "src/queue/queue.js~queue#count",
+    "class/src/queue/Queue.js~Queue.html#instance-method-count",
+    "src/queue/Queue.js~Queue#count",
+    "method"
+  ],
+  [
+    "src/queue/queue.js~queue#dequeue",
+    "class/src/queue/Queue.js~Queue.html#instance-method-dequeue",
+    "src/queue/Queue.js~Queue#dequeue",
+    "method"
+  ],
+  [
+    "src/queue/queue.js~queue#enqueue",
+    "class/src/queue/Queue.js~Queue.html#instance-method-enqueue",
+    "src/queue/Queue.js~Queue#enqueue",
+    "method"
+  ],
+  [
+    "src/queue/queue.js~queue#isempty",
+    "class/src/queue/Queue.js~Queue.html#instance-method-isEmpty",
+    "src/queue/Queue.js~Queue#isEmpty",
+    "method"
   ],
   [
     "src/stack/stack.js",

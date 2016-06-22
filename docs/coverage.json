@@ -1,7 +1,7 @@
 {
-  "coverage": "58.13%",
-  "expectCount": 43,
-  "actualCount": 25,
+  "coverage": "62%",
+  "expectCount": 50,
+  "actualCount": 31,
   "files": {
     "src/graph/DuplicateEdgeError.js": {
       "expectCount": 4,
@@ -35,6 +35,13 @@
       "actualCount": 14,
       "undocumentLines": [
         14
+      ]
+    },
+    "src/queue/Queue.js": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        9
       ]
     },
     "src/stack/Stack.js": {
