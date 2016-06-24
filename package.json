@@ -6,7 +6,8 @@
   "scripts": {
     "docgen": "node_modules/.bin/esdoc -c esdoc.json",
     "docs": "open docs/index.html",
-    "test": "node_modules/.bin/mocha --compilers js:babel-core/register tests/**/*.test.js"
+    "test": "node_modules/.bin/mocha --compilers js:babel-core/register tests/**/*.test.js",
+    "nyan": "node_modules/.bin/mocha --compilers js:babel-core/register --reporter=nyan tests/**/*.test.js"
   },
   "keywords": ["algorithms", "data structures"],
   "author": "Jim McGaw <jpmcgaw@gmail.com>",
