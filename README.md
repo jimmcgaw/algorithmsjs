@@ -6,15 +6,24 @@ In my continuing effort to become more proficient with both TDD and algorithms, 
 repo to be my dumping ground for algorithms implemented in JavaScript. I use Mocha / Chai as the
 testing framework.
 
+This collection exists as an academic exercise for myself, and for anyone who might want to see how
+another software engineer might implement these algorithms in JavaScript. I'd caution against using them in production code; I'd bet you can find more performant implementations elsewhere.
+
 ## Installation
+
+In your project: ``` $ npm install --save compscijs ```
+
+## Documentation
+
+
+
+## Development
 
 ``` $ npm install ```
 
 To run the tests:
 
 ``` $ npm test ```
-
-## Documentation
 
 I'm also using this repo to experiment with automated documentation generation for ES6 classes. I'm currently
 using esdocs for this. To generate the docs:
