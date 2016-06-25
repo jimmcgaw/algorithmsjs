@@ -1,9 +1,9 @@
-import Graph from './src/graph/Graph';
-import DuplicateVertexError from './src/graph/DuplicateVertexError';
-import DuplicateEdgeError from './src/graph/DuplicateEdgeError';
-import Queue from './src/queue/Queue';
-import Stack from './src/stack/Stack';
-import LinkedList from './src/linkedlist/LinkedList';
+import Graph from './dist/graph/Graph';
+import DuplicateVertexError from './dist/graph/DuplicateVertexError';
+import DuplicateEdgeError from './dist/graph/DuplicateEdgeError';
+import Queue from './dist/queue/Queue';
+import Stack from './dist/stack/Stack';
+import LinkedList from './dist/linkedlist/LinkedList';
 
 module.exports.Graph = Graph;
 module.exports.DuplicateVertexError = DuplicateVertexError;
