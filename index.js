@@ -1,9 +1,9 @@
-import Graph from './dist/graph/Graph';
-import DuplicateVertexError from './dist/graph/DuplicateVertexError';
-import DuplicateEdgeError from './dist/graph/DuplicateEdgeError';
-import Queue from './dist/queue/Queue';
-import Stack from './dist/stack/Stack';
-import LinkedList from './dist/linkedlist/LinkedList';
+var Graph = require('./dist/graph/Graph');
+var DuplicateVertexError = require('./dist/graph/DuplicateVertexError');
+var DuplicateEdgeError = require('./dist/graph/DuplicateEdgeError');
+var Queue = require('./dist/queue/Queue');
+var Stack = require('./dist/stack/Stack');
+var LinkedList = require('./dist/linkedlist/LinkedList');
 
 module.exports.Graph = Graph;
 module.exports.DuplicateVertexError = DuplicateVertexError;
