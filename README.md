@@ -13,9 +13,17 @@ another software engineer might implement these algorithms in JavaScript. I'd ca
 
 In your project: ``` $ npm install --save compscijs ```
 
+To use them:
+
+``` var compscijs = require('compscijs'); ```
+
+``` var graph = new compscijs.Graph(); ```
+
 ## Documentation
 
+More documentation about the code is available at:
 
+``` $ open node_modules/compscijs/docs/index.html ```
 
 ## Development
 
