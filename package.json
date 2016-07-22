@@ -1,6 +1,6 @@
 {
   "name": "compscijs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Basic collection of algorithm and data structure implementations",
   "main": "index.js",
   "scripts": {
