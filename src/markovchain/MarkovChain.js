@@ -1,56 +1,66 @@
 class MarkovChain {
-  constructor(text){
-    this.text = text;
+  constructor(list){
     this._chain = {};
 
-    this._build();
+    this.lastItem = undefined;
+    this._build(list);
   }
 
-  _build(){
-    this._clearChain();
-    let words = this.text.split(' ');
-    words.forEach( (word, index) => {
-      if (index !== words.length-1){
-        let nextWord = words[index+1];
-        if (!(word in this._chain)){
-          this._chain[word] = [nextWord];
-        } else {
-          this._chain[word].push(nextWord);
-        }
+  _build(list){
+    list.forEach( (item, index) => {
+      if (index === 0 && typeof this.lastItem !== 'undefined'){
+        this._appendItem(this.lastItem, item);
+      }
+
+      if (index !== list.length-1){
+        let nextItem = list[index+1];
+        this._appendItem(item, nextItem);
+      } else {
+        this.lastItem = list[index];
       }
     });
   }
 
-  _clearChain(){
-    this.chain = {};
-  }
-
-  appendText(text){
-    this.text += text;
-    this._build();
-  }
-
-  _getRandomWord(word){
-    if (typeof word !== 'undefined' && word in Object.keys(this._chain)){
-      let successiveWords = this._chain[word];
-      return successiveWords[Math.floor(Math.random() * successiveWords.length)];
+  _appendItem(item, nextItem){
+    if (!(item in this._chain)){
+      this._chain[item] = [nextItem];
     } else {
-      let allWords = Object.keys(this._chain);
-      return allWords[Math.floor(Math.random()*allWords.length)];
+      this._chain[item].push(nextItem);
     }
+  }
+
+  _clearChain(){
+    this._chain = {};
+  }
+
+  appendItems(list){
+    this._build(list);
+  }
+
+  _getStartingItem(){
+    let allObjects = Object.keys(this._chain);
+    return allObjects[Math.floor(Math.random() * allObjects.length)];
+  }
+
+  _getRandomItem(item){
+    let successiveItems = this._chain[item];
+    if (successiveItems.length > 0){
+      return successiveItems[Math.floor(Math.random() * successiveItems.length)];
+    }
+    return this._getStartingItem();
   }
 
   generate(sequenceLength){
-    let startingWord = this._getRandomWord();
-    let words = [startingWord];
+    let startingWord = this._getStartingItem();
+    let items = [startingWord];
     let index = 1;
 
-    while (words.length < sequenceLength){
-      let lastWord = words[words.length-1];
-      words.push(this._getRandomWord(lastWord));
+    while (items.length < sequenceLength){
+      let lastItem = items[items.length-1];
+      items.push(this._getRandomItem(lastItem));
     }
 
-    return words.join(' ');
+    return items;
   }
 
 }
